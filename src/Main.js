@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer.js'
 import Header from './Header.js'
 import Skillz from './Skillz.js'
-import Video from './Video.js'
+// import Video from './Video.js'
 
 class Main extends React.Component{
     // constructor(props){
@@ -24,7 +24,7 @@ class Main extends React.Component{
        
         return(
             <div id="main">
-                <Video />
+                {/* <Video /> */}
                 <Header />
                 <Skillz />
                 <Footer />
