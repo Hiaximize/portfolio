@@ -4,15 +4,14 @@
 html{
   background-color: #222f5b;
 }
+#welcomeMessage{
+  text-align: center;
+}
 #gifContainer{
   max-width: 100vw;
   max-height: 100vh;
 }
-GifPlayer{
-  max-width: 100vw;
-  max-height: 100vh;
-  background-size: cover;
-}
+
 #skillzContainer{
   display: flex;
   justify-content: center;
@@ -71,7 +70,7 @@ GifPlayer{
 }
 
 .projects{
-  width: 30vw;
+  width: 32vw;
   height: 40vh;
   margin: 20px;
 }

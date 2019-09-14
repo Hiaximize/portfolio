@@ -12,13 +12,16 @@ class Header extends React.Component{
             backgroundColor={"#000000"}
             header={
                 <div className="Header_root">
+                    
                     <ul id="headerLinks">
                         <li><a href="#skillzContainer">My Skillz</a></li>
-                        <li><a href="#portfolioContainer">My Work</a></li>
+                        <li><a href="#projectsContainer">My Work</a></li>
                         <li>< a href="#">Contact Me</a></li>
                     </ul>
+                    <div id="welcomeMessage"> <h1> Hola </h1> </div>
                 </div>
             }>
+                
                 
             </StickyHeader>
         )
