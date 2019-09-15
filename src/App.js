@@ -4,15 +4,17 @@ import './App.css';
 import Main from './Main.js'
 
 
+class App extends React.Component{
 
-function App() {
-  return (
+  render(){
+    return (
     <div className="App">
         
       <Main />
       
     </div>
-  );
+    )
+  }
 }
 
 export default App;
