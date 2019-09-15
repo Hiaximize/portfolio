@@ -57,7 +57,7 @@ class Skillz extends React.Component{
 
                     <div className="skill swirl-in-fwd" id="react">
                         {/* <h3>React</h3> */}
-                        <img className="skillPicture" src="#" alt="React"></img>
+                        <img className="skillPicture rotate-center" src="react.png" alt="React"></img>
                     </div>
             </div>  
         )
