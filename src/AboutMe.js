@@ -11,9 +11,9 @@ class AboutMe extends React.Component{
 
                 <div id="aboutMeContent">
                     <div id="avatar">
-                        <img id="derek" src="Derek.png"></img>
+                        <img className="slide-in-right" id="derek" src="Derek.png"></img>
                     </div>    
-                    <div id="welcomeMessage">
+                    <div className="slide-in-left" id="welcomeMessage">
                         <h6>My name is Derek Barker. I'm a US Army combat Vet, and transitioned to Full-Stack Developer. Solving complex challenges using simple but elegant solutions for clients is something that drives me. </h6>         
                     </div>
                 </div>
