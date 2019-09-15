@@ -12,7 +12,10 @@ class Footer extends React.Component{
                     <div id="test">
                     <ul id="footer">
                         <li><a target="_blank" href="https://www.linkedin.com/in/dbarkerit">LinkedIn</a></li>
+
                         <li><a target="_blank" href="https://www.github.com/hiaximize">Github</a></li>
+
+                        <li><a target="_blank" href="#">Credits</a></li>
                     </ul>
                     </div>
                 </div>

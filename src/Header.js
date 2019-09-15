@@ -2,6 +2,7 @@ import React from 'react'
 import StickyHeader from 'react-sticky-header'
 import 'react-sticky-header/styles.css'
 
+
 class Header extends React.Component{
     constructor(props){
         super(props)
@@ -19,6 +20,7 @@ class Header extends React.Component{
 
     render(){
         return(
+        
             <StickyHeader className="headerContainer"
             backgroundImage={"headerGif.gif"} 
             backgroundColor={"#000000"}
@@ -43,6 +45,7 @@ class Header extends React.Component{
                 
                 
             </StickyHeader>
+           
         )
     }
 }
