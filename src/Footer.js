@@ -6,13 +6,15 @@ class Footer extends React.Component{
         return(
             <StickyFooter className="stickyFooter"
             bottomThreshold={50}
-            normalStyles={{backgroundColor: "#999999", padding: "1rem"}}
+            normalStyles={{borderLeft: "25px solid transparent", backgroundColor: "#546186", padding: "1rem", zIndex: "2"}}
             stickyStyles={{display: "none"}}>
                 <div id="footerContainer">
+                    <div id="test">
                     <ul id="footer">
                         <li><a target="_blank" href="https://www.linkedin.com/in/dbarkerit">LinkedIn</a></li>
                         <li><a target="_blank" href="https://www.github.com/hiaximize">Github</a></li>
                     </ul>
+                    </div>
                 </div>
             </StickyFooter>
         )

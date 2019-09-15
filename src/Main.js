@@ -34,7 +34,7 @@ class Main extends React.Component{
         pageTitle = "My Projects"
         break
       case 'skillz':
-        pageTitle = "My Skillz"
+        pageTitle = "Tech I've Used"
         break
       case 'contact':
         pageTitle = "Contact Me"

@@ -6,7 +6,12 @@ class ContactMe extends React.Component{
     }
     render(){
         return(
-            <h1>Contact me</h1>
+            <div id="contactMeContainer">
+                
+                <a target="_blank" title="dbarkerit@gmail.com" href="mailto:dbarkerit@gmail.com?body=Testing%20Hello>Email me">Email me</a>
+
+
+            </div>
         )
     }
 }

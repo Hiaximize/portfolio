@@ -4,7 +4,7 @@ class Skillz extends React.Component{
     render(){
         return(
             <div id="skillzContainer">
-
+                
                     <div className="skill swirl-in-fwd" id="nodeContainer">
                         {/* <h3> Node.js</h3> */}
                         <img className="skillPicture swirl-in-fwd" src="node.png" id="node" alt="Node.js"></img>
