@@ -13,6 +13,9 @@ class Header extends React.Component{
     addClass(){
         document.getElementById("contact").classList.add("shake-horizontal")
     }
+    toggleView(){
+
+    }
 
     render(){
         return(
@@ -21,6 +24,7 @@ class Header extends React.Component{
             backgroundColor={"#000000"}
             headerOnly={true}
             header={
+
                 <div className="Header_root slide-in-left">
                     
                     <ul id="headerLinks">
