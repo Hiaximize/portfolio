@@ -15,7 +15,7 @@ class MyProjects extends React.Component{
 
                     <a target="_blank" href="https://frozen-tor-60140.herokuapp.com"><img className="projects slit-in-vertical" id="workoutTracker" src="workoutTracker.gif"></img></a>
 
-                    <img className="projects" id="finalProject" src="#" alt="MembershipTracker"></img>
+                    <img className="projects slit-in-vertical" id="finalProject" src="#" alt="MembershipTracker image coming soon when project is completed"></img>
 
                 </div>
             </div>

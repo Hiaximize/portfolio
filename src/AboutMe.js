@@ -21,13 +21,13 @@ class AboutMe extends React.Component{
                 
 
                 <div id="aboutMeTileContainer">
-                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="userfocused.png"/> User Focused</div>
+                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="userfocused.png" alt="scaled in user focused image"/> User Focused</div>
 
-                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="responsiveImage.png"/>Responsive Designs</div>
+                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="responsiveImage.png" alt="responsive design picture" />Responsive Designs</div>
 
-                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="frontBackEnd.png" />Front & Back End</div>
+                    <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="frontBackEnd.png" alt="front and backend picture" />Front & Back End</div>
 
-                    <div className="aboutMeTile scale-in-center">Tenacious Developer</div>
+                    <div className="aboutMeTile scale-in-center"><img src="#" alt="image coming soon" />Tenacious Developer</div>
                 </div>
 
             </div>
