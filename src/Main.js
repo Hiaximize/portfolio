@@ -16,7 +16,10 @@ class Main extends React.Component{
         pageTitle: "My Projects",
         page: 'home'
       },
-      width: window.innerWidth
+      width: window.screen.availWidth,
+      //these values are opposite what would be logical right now open menu is = false will have the menu open NOT closed. A value of true the menu IS NOT opened but closed
+      open: false,
+      menuOpen: false
     }
     this.handleView = this.handleView.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -54,40 +57,64 @@ class Main extends React.Component{
       }
     })
   }
-    // handleClick(){
-    //   this.setState({
-    //     open: !this.state.open
-    //   })
-    // }
+
+ 
+    handleClick(){
+      this.setState({
+        open: !this.state.open,
+        menuOpen: !this.state.menuOpen
+      })
+    
+      if(this.state.menuOpen === true){
+        document.getElementById("hamburgerMenu").style.height = "28px"
+        document.getElementById("home").style.display = "none"
+        document.getElementById("tech").style.display = "none"
+        document.getElementById("projects").style.display = "none"
+
+      }
+      else if(this.state.menuOpen === false){
+        document.getElementById("hamburgerMenu").style.height = "100%"
+        
+      document.getElementById("home").style.display = "block"
+      document.getElementById("tech").style.display = "block"
+      document.getElementById("projects").style.display = "block"
+      }
+      console.log(this.state.menuOpen)
+    }
+  
   
     render(){
       // console.log(this.state.width)
-      // window.addEventListener('resize', ()=>{
-      //   this.setState({
-      //       width: window.innerWidth
-      //   })
-      //   console.log(this.state.width)
-      // })
+      window.addEventListener('resize', ()=>{
+        this.setState({
+            width: window.screen.availWidth
+        })
+   
+      })
         return(
             <div id="main">
-                
-                {/* {this.state.width < 414 ?
-                <HamburgerMenu 
-                isOpen={this.state.open}
-                menuClicked={this.handleClick.bind(this)}
-                width={20}
-                height={50}
-                color="black"
-                animationDuration={1}
-                > <li>ITEM 1</li>
-                <li>ITEM 2</li>
-                <li>ITEM 3</li></HamburgerMenu>: ''} */}
+                <div id="hamburgerMenu">
+                    {this.state.width < 414 ?
+                    <HamburgerMenu 
+                    isOpen={this.state.open}
+                    menuClicked={this.handleClick.bind(this)}
+                    width={20}
+                    height={30}
+                    color="white"
+                    animationDuration={.5}
+                  />: ''}
+                  <ul id="hamburgerMenuItems">
+                    <li className="menuItem slide-in-left" id="home" onClick={()=>{{this.state.open=false}{this.handleView('home')}}}>Home</li>
+                    <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleView('skillz')}}}>Tech</li>
+                    <li className="menuItem slide-in-left" id="projects" onClick={()=>{{this.handleView('projects')}}}>Projects</li>
+                  </ul>
+                </div>
 
-                
+                {this.state.width > 414 ?
                 <Header 
                 handleChange={this.handleChange}
                 handleView={this.handleView}
-                view={this.state.view}/>
+                view={this.state.view}/> : ''}
 
                 {this.state.view.page==='projects'
                 ? <MyProjects 

@@ -14,12 +14,10 @@ class AboutMe extends React.Component{
                         <img className="slide-in-right" id="derek" src="Derek.png"></img>
                     </div>    
                     <div className="slide-in-left" id="welcomeMessage">
-                        <h6>My name is Derek Barker. I'm a US Army combat Vet, and transitioned to Full-Stack Developer. Solving complex challenges using simple but elegant solutions for clients is something that drives me. </h6>         
+                        <h6>My name is Derek Barker. I'm a US Army combat Vet, that transitioned to Full-Stack Developer. Solving complex challenges using simple but elegant solutions for clients is something that drives me. </h6>         
                     </div>
                 </div>
                 
-                
-
                 <div id="aboutMeTileContainer">
                     <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="userfocused.png" alt="scaled in user focused image"/> User Focused</div>
 
@@ -29,7 +27,7 @@ class AboutMe extends React.Component{
 
                     <div className="aboutMeTile scale-in-center"><img src="#" className="aboutMeImg scale-in-center" alt="image coming soon" />Tenacious Developer</div>
                 </div>
-
+        
             </div>
         )
     }
