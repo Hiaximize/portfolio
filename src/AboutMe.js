@@ -27,7 +27,7 @@ class AboutMe extends React.Component{
 
                     <div className="aboutMeTile scale-in-center"><img className="aboutMeImg scale-in-center" src="frontBackEnd.png" alt="front and backend picture" />Front & Back End</div>
 
-                    <div className="aboutMeTile scale-in-center"><img src="#" alt="image coming soon" />Tenacious Developer</div>
+                    <div className="aboutMeTile scale-in-center"><img src="#" className="aboutMeImg scale-in-center" alt="image coming soon" />Tenacious Developer</div>
                 </div>
 
             </div>

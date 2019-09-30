@@ -5,6 +5,7 @@ import Skillz from './Skillz.js'
 import MyProjects from './MyProjects.js'
 import ContactMe from './ContactMe.js'
 import AboutMe from './AboutMe.js'
+import HamburgerMenu from 'react-hamburger-menu'
 
 
 class Main extends React.Component{
@@ -14,7 +15,8 @@ class Main extends React.Component{
       view: {
         pageTitle: "My Projects",
         page: 'home'
-      }
+      },
+      width: window.innerWidth
     }
     this.handleView = this.handleView.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -52,13 +54,35 @@ class Main extends React.Component{
       }
     })
   }
-
-
-
-
+    // handleClick(){
+    //   this.setState({
+    //     open: !this.state.open
+    //   })
+    // }
+  
     render(){
+      // console.log(this.state.width)
+      // window.addEventListener('resize', ()=>{
+      //   this.setState({
+      //       width: window.innerWidth
+      //   })
+      //   console.log(this.state.width)
+      // })
         return(
             <div id="main">
+                
+                {/* {this.state.width < 414 ?
+                <HamburgerMenu 
+                isOpen={this.state.open}
+                menuClicked={this.handleClick.bind(this)}
+                width={20}
+                height={50}
+                color="black"
+                animationDuration={1}
+                > <li>ITEM 1</li>
+                <li>ITEM 2</li>
+                <li>ITEM 3</li></HamburgerMenu>: ''} */}
+
                 
                 <Header 
                 handleChange={this.handleChange}
