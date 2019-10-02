@@ -6,7 +6,7 @@ class Footer extends React.Component{
         return(
             <StickyFooter className="stickyFooter"
             bottomThreshold={50}
-            normalStyles={{margin: "0 auto", backgroundColor: "#546186", padding: "1rem", width: "100%", zIndex: "2"}}
+            normalStyles={{margin: "0 auto", backgroundColor: "#546186", padding: "1rem", width: "102vw", zIndex: "2"}}
             stickyStyles={{display: "none"}}>
                 <div id="footerContainer">
                     <div id="test">

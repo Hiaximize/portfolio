@@ -23,6 +23,7 @@ class Main extends React.Component{
     }
     this.handleView = this.handleView.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleChange(event){
@@ -57,16 +58,19 @@ class Main extends React.Component{
       }
     })
   }
-
  
     handleClick(){
       this.setState({
         open: !this.state.open,
         menuOpen: !this.state.menuOpen
       })
-    
+
+      const menu = document.getElementById("hamburgerMenu")
+      
       if(this.state.menuOpen === true){
-        document.getElementById("hamburgerMenu").style.height = "28px"
+        menu.style.height = "30px"
+
+        menu.style.borderBottom = "4px solid #fb3640"
         document.getElementById("home").style.display = "none"
         document.getElementById("tech").style.display = "none"
         document.getElementById("projects").style.display = "none"
@@ -74,10 +78,10 @@ class Main extends React.Component{
       }
       else if(this.state.menuOpen === false){
         document.getElementById("hamburgerMenu").style.height = "100%"
-        
-      document.getElementById("home").style.display = "block"
-      document.getElementById("tech").style.display = "block"
-      document.getElementById("projects").style.display = "block"
+        menu.style.borderBottom = "4px solid #fb3640"
+        document.getElementById("home").style.display = "block"
+        document.getElementById("tech").style.display = "block"
+        document.getElementById("projects").style.display = "block"
       }
       console.log(this.state.menuOpen)
     }
@@ -97,16 +101,16 @@ class Main extends React.Component{
                     {this.state.width < 414 ?
                     <HamburgerMenu 
                     isOpen={this.state.open}
-                    menuClicked={this.handleClick.bind(this)}
+                    menuClicked={this.handleClick}
                     width={20}
                     height={30}
                     color="white"
                     animationDuration={.5}
                   />: ''}
                   <ul id="hamburgerMenuItems">
-                    <li className="menuItem slide-in-left" id="home" onClick={()=>{{this.state.open=false}{this.handleView('home')}}}>Home</li>
-                    <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleView('skillz')}}}>Tech</li>
-                    <li className="menuItem slide-in-left" id="projects" onClick={()=>{{this.handleView('projects')}}}>Projects</li>
+                    <li className="menuItem slide-in-left" id="home" onClick={()=>{{this.handleClick()}{this.handleView('home')}}}>Home</li>
+                    <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleClick()}{this.handleView('skillz')}}}>Tech</li>
+                    <li className="menuItem slide-in-left" id="projects" onClick={()=>{{this.handleClick()}{this.handleView('projects')}}}>Projects</li>
                   </ul>
                 </div>
 
