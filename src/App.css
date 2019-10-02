@@ -1,254 +1,410 @@
 @import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700&display=swap" rel="stylesheet');
 
-*{
-  /* border: 1px solid gold; */
-  font-family: Exo 2, sans-serif;
-}
-
-::-webkit-scrollbar{
-  width: 15px;
-}
-::-webkit-scrollbar-track{
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb{
-  background-color: #252e4b;
-  border-radius: 10px;
-}
-html{
-  background-color: #e2e2e2;
-}
-#aboutMeContent{
-  align-content: flex-start;
-  display: flex;
-  justify-content: space-around;
-}
-#welcomeMessage{
-  font-size: 50px;
-  color: #256EB5;
-  text-shadow: 2px 2px 4px #7f7f7f;
-  width: 60%;
-}
-#skillzContainer{
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 75vw;
-  height: 85vh;
-  margin: 0 auto;
-}
-
-.skill{
-  margin: 50px;
-}
-
-#javascript {
-  width: 120px;
-  height: 120px;
-  filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
-}
-
-#node {
-  filter: drop-shadow(0 0 4px white);
-  height: 80px;
-  width: 90px;
-}
-
-.skillPicture {
-  width: 80px;
-  height: 80px;
-  filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
-}
-
-.skillPicture:hover{
-  transform: scale(1.5);
-}
-
-.Header_root{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-  border-bottom: 4px solid #fb3640;
-}
-.headerContainer{
-  height: 12vh;
-  width: 100vw;
-  z-index: 3;
-}
-hr{
-  margin-bottom: 60px;
-  background-color: #fb3640;
-}
-#headerLinks a{
-  text-decoration: none;
-  color: white;
-}
-#headerLinks a:hover{
-  color: #af252c;
-}
-#headerLinks li{
-  display: inline;
-  margin: 15px;
-  list-style: none;
-}
-
-#headerLinks{
-  font-weight: 600;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  letter-spacing: 4px;
-}
-#headerLinks li:hover{
-  font-weight:600;
-  color: #af252c;
-}
-
-#projectsContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 25px auto;
-}
-
-.projects{
-  width: 45vw;
-  height: 40vh;
-  margin: 20px;
-  border-radius: 5px;
-}
-
-#footerContainer{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  /* margin-top: 40px; */
-}
-
-#footer li{
-  display: inline;
-  margin-right: 20px;
-  font-size: 18px;
-}
-
-#derek {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  width: 300px;
-  height: 300px;
-}
-
-#footer a{
-  text-decoration: none;
-  color: #e2e2e2;
-  letter-spacing: 4px;
-}
-
-#aboutMeContainer{
-  width: 90vw;
-  height: 90vh;
-  margin: 30px auto;
-}
-
-#aboutMeTileContainer{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-wrap: wrap; 
-  margin: -370px auto;
-  width: 100%;
-  height: 85vh;
-  
-}
-.aboutMeImg{
-  width: 100%;
-  height: 75%;
-  padding-bottom: 2px;
-  background-color: #e2e2e2;
-}
-.aboutMeTile{
-  /* margin: 10px; */
-  font-weight: 600;
-  border-radius: 5px;
-  background-color: #252e4b;
-  width: 250px;
-  height: 250px;
-  color: #e2e2e2;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 4px;
-  padding: 4px;
-}
-
-.aboutMeTile:hover{
-  color:#fb3640;
-}
-
-/* MEDIA QUERIES */
-
-/* @media(max-width: 360px){
-
-  #welcomeMessage{
-    align-content: flex-start;
+@media screen and (max-width: 360px){
+  * {
+    font-family: Exo 2, sans-serif;
   }
 
-  h6{
-    font-size: 12px;
+  html {
+    background-color: #e2e2e2;
+  }
+
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #welcomeMessage {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+  #skillzContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100vh;
+    margin: 20px auto;
+  }
+
+  .skill {
+    margin: 15px;
+  }
+
+  #javascript {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillPicture {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+  .Header_root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .headerContainer {
+    height: 100%;
+    width: 100vw;
+    z-index: 3;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+  }
+
+  #headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+  hr{
+    background-color: #fb3640;
+    height: 2px;
+    width: 300x;
+    margin-left: 50px;
+    margin-right: 25px;
+  }
+
+  #projectsContainer {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  .projects {
+    width: 350px;
+    height: 45vh;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  #test{
+    margin: 0 auto;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  #avatar{
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  #derek {
+    margin-top: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 8px 18px;
+    /* width: 400px;
+    margin: 0 auto; */
   }
 
   #aboutMeTileContainer {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
     width: 100%;
-    height: 60vh;
-
+    height: 50%;
   }
 
-  #derek{
-    width: 100px;
-    height: 100px;
+  #hamburgerMenu{
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 105vw;
+    height: 30px;
+    transition: height 3s;
+    -webkit-transition: height 3s;
+    border-bottom: 4px solid #fb3640;
+  }
+  .menuItem{
+    display: none;
+    text-align: right;
+  }
+  #hamburgerMenu li{
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 20px;
   }
 
-   #aboutMeContainer {
-     width: 95vw;
-     height: 85vh;
-     margin: 25px auto;
-   }
- 
-  .aboutMeTile { */
-    /* margin: 10px; */
-    /* border-radius: 5px;
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+
+  .aboutMeTile {
+    font-weight: 600;
+    border-radius: 5px;
     background-color: #252e4b;
     width: 150px;
     height: 150px;
     color: #e2e2e2;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding: 4px;
+    margin: 10px;
+  }
+
+  .aboutMeTile:hover {
+    color: #fb3640;
+  }
+}
+  /* *{
+
+    font-family: Exo 2, sans-serif;
+  }
+
+  ::-webkit-scrollbar{
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #252e4b;
+    border-radius: 10px;
+  }
+  html{
+    background-color: #e2e2e2;
+  }
+  #aboutMeContent{
+    align-content: flex-start;
+    display: flex;
+    justify-content: space-around;
+  }
+  #welcomeMessage{
+    font-size: 50px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 60%;
+  }
+  #skillzContainer{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75vw;
+    height: 85vh;
+    margin: 0 auto;
+  }
+
+  .skill{
+    margin: 50px;
+  }
+
+  #javascript {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 90px;
+  }
+
+  .skillPicture {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover{
+    transform: scale(1.5);
+  }
+
+  .Header_root{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-bottom: 4px solid #fb3640;
+  }
+  .headerContainer{
+    height: 12vh;
+    width: 100vw;
+    z-index: 3;
+  }
+  hr{
+    margin-bottom: 60px;
+    background-color: #fb3640;
+  }
+  #headerLinks a{
+    text-decoration: none;
+    color: white;
+  }
+  #headerLinks a:hover{
+    color: #af252c;
+  }
+  #headerLinks li{
+    display: inline;
+    margin: 15px;
+    list-style: none;
+  }
+
+  #headerLinks{
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  #headerLinks li:hover{
+    font-weight:600;
+    color: #af252c;
+  }
+
+  #projectsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px auto;
+  }
+
+  .projects{
+    width: 45vw;
+    height: 40vh;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  #footerContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #footer li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #derek {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+  }
+
+  #footer a{
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+  #aboutMeContainer{
+    width: 90vw;
+    height: 90vh;
+    margin: 30px auto;
+  }
+
+  #aboutMeTileContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin: -370px auto;
+    width: 100%;
+    height: 85vh;
+    
+  }
+  .aboutMeImg{
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+  .aboutMeTile{
+
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 250px;
+    height: 250px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 20px;
     letter-spacing: 4px;
     padding: 4px;
   }
-  .headerContainer {
-    height: 40vh;
-    z-index: 3;
-  }
-  .Header_root {
-    display: flex;
-    justify-content: center;
-    padding-right: 20px;
-    border-bottom: 2px solid #e2e2e2;
-  }
-  #headerLinks li{
-    display: block;
-  }
-  
-} */
 
-@media(max-width: 414px){
+  .aboutMeTile:hover{
+    color:#fb3640;
+  } */
+
+
+/* @media(max-width: 414px){ 
 
   #skillzContainer{
     height: 60vh;
@@ -344,7 +500,7 @@ hr{
 
 /* NEXT MEDIA QUERY */
 /* need to do the about me page still */
-@media(max-width: 875px) and (max-width:818px){
+/* @media(max-width: 875px) and (max-width:818px){
    #skillzContainer {
      z-index: 0;
      display: flex;
@@ -423,8 +579,8 @@ hr{
     width: 95vw;
     height: 90vh;
     margin: -50px auto;
-  }
-}
+  } */
+/* }  */
 
 /* ////////////////// */
 

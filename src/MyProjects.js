@@ -17,7 +17,6 @@ class MyProjects extends React.Component{
 
                     <a rel="noopener noreferrer" target="_blank" href="https://rocky-waters-58456.herokuapp.com"><img className="projects" id="finalProject" src="#" alt="MembershipTracker"></img></a>
 
-                </div>
             </div>
         )
     }
