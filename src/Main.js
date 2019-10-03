@@ -66,9 +66,10 @@ class Main extends React.Component{
       })
 
       const menu = document.getElementById("hamburgerMenu")
-      
+     
       if(this.state.menuOpen === true){
         menu.style.height = "30px"
+       
 
         menu.style.borderBottom = "4px solid #fb3640"
         document.getElementById("home").style.display = "none"
@@ -109,7 +110,7 @@ class Main extends React.Component{
                   />: ''}
                   <ul id="hamburgerMenuItems">
                     <li className="menuItem slide-in-left" id="home" onClick={()=>{{this.handleClick()}{this.handleView('home')}}}>Home</li>
-                    <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleClick()}{this.handleView('skillz')}}}>Tech</li>
+                    <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleClick()}{this.handleView('skillz')}}}>What I've used</li>
                     <li className="menuItem slide-in-left" id="projects" onClick={()=>{{this.handleClick()}{this.handleView('projects')}}}>Projects</li>
                   </ul>
                 </div>

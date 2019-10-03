@@ -1,13 +1,13 @@
 import React from 'react'
-import StickyFooter from 'react-sticky-footer'
+// import StickyFooter from 'react-sticky-footer'
 
 class Footer extends React.Component{
     render(){
         return(
-            <StickyFooter className="stickyFooter"
-            bottomThreshold={50}
-            normalStyles={{margin: "0 auto", backgroundColor: "#546186", padding: "1rem", width: "102vw", zIndex: "2"}}
-            stickyStyles={{display: "none"}}>
+            // <StickyFooter className="stickyFooter"
+            // bottomThreshold={100}
+            // normalStyles={{margin: "0 auto", position: "absolute", bottom: "0", left: "0", backgroundColor: "#546186", padding: "25px", width: "100%", height: "30px", zIndex: "2"}}
+            // stickyStyles={{display: "none"}}>
                 <div id="footerContainer">
                     <div id="test">
                     <ul id="footer">
@@ -19,7 +19,7 @@ class Footer extends React.Component{
                     </ul>
                     </div>
                 </div>
-            </StickyFooter>
+            // </StickyFooter>
         )
     }
 }
