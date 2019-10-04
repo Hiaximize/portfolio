@@ -6,8 +6,8 @@ class MyProjects extends React.Component{
             <div id="myProjectsContainer">
                 
                 <div id="projectsContainer">
-                    <hr />
-                    <a rel="noopener noreferrer" target="_blank" href="https://hiaximize.github.io"><img className="projects slit-in-vertical" id="robotCallerApp" src="rickAndMorty.gif" alt="RickyAndMorty"></img></a>
+                    
+                    <a rel="noopener noreferrer" target="_blank" href="https://hiaximize.github.io"><img className="projects slit-in-vertical" id="rickAndMorty" src="rickAndMorty.gif" alt="RickyAndMorty"></img></a>
 
                     <hr align="center" className="projectsHr"/>
 

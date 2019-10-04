@@ -1,6 +1,11 @@
 /* /////////////////////////////////////////@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700&display=swap" rel="stylesheet');
 
+
+
+
+
+@media screen and (min-width: 1025px){
 * {
 
   font-family: Exo 2, sans-serif;
@@ -204,108 +209,306 @@ hr {
 .aboutMeTile:hover {
   color: #fb3640;
 }
+}
 
 
 
-/* @media screen and (max-width: 414px) {
 
-  #skillzContainer {
-    height: 60vh;
-    width: 90vw;
+
+@media screen and (max-width: 414px) {
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
   }
 
-  .skill {
-    margin: 5px;
+  html {
+    background-color: #e2e2e2;
   }
 
-  #projectsContainer {
+  #main {
+    width: 100%;
+    /* border: 1px solid purple; */
+  }
+
+  .App {
+    width: 425px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+  #hamburgerMenu {
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 113vw;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .menuItem {
+    display: none;
+    text-align: right;
+  }
+
+  #hamburgerMenu ul {
+    text-align: right;
+  }
+
+  #hamburgerMenu li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 30px;
+    width: 200px;
+    text-align: right;
+  }
+
+  #projects {
+    width: 150px;
+    color: red;
+  }
+
+  #hamburgerMenuItems {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: -60px auto;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #derek {
+    margin-top: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  #avatar {
+    height: 150px;
+    margin-top: 30px;
   }
 
   #welcomeMessage {
-    font-size: 22px;
+    font-size: 26px;
+    margin-right: 20px;
     color: #256EB5;
-    text-shadow: 2px 2px 4px #b2b2b2;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    height: 100vh;
+    margin: 5px 34px;
   }
 
   #aboutMeTileContainer {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
     width: 100%;
-    height: 40vh;
-
+    height: 420px;
+    margin: 0 auto;
   }
 
-  #derek {
-    width: 120px;
-    height: 120px;
-  }
-
-  #footerContainer {
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-  }
-
-  #test {
-    height: 100px;
-  }
-
-  #headerLinks li {
-    display: inline;
-    margin: 5px;
-    list-style: none;
-  }
-
-  #aboutMeContainer {
-    width: 95vw;
-    height: 90vh;
-    margin: -110px auto;
-  }
-
-  .projects {
-    width: 90vw;
-    height: 40vh;
-    margin: 10px;
-    border-radius: 5px;
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
   }
 
   .aboutMeTile {
-    margin: 5px;
+    font-weight: 600;
     border-radius: 5px;
     background-color: #252e4b;
-    width: 170px;
-    height: 170px;
+    width: 175px;
+    height: 175px;
     color: #e2e2e2;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 4px;
-    padding: 4px;
+    padding: 6px;
+    margin: 10px;
   }
 
-  .headerContainer {
-    height: 35vh;
-    z-index: 3;
+  .aboutMeTile:hover {
+    color: #fb3640;
   }
 
 
-  #headerLinks li {
-    display: block;
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 100vh;
+    margin: 100px 35px;
   }
+
+  .skill {
+    margin: 15px;
+  }
+
+  #javascript {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillPicture {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr {
+    background-color: #fb3640;
+    height: 2px;
+    width: 320px;
+    text-align: center;
+    margin: 20px 25px;
+    
+  } 
+
+  #myProjectsContainer {
+    width: 420px;
+    margin: 100px 30px;
+  }
+
+  #projectsContainer {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  #projectsContainer a{
+    height: 100%;
+  }
+
+  .projects {
+    width: 400px;
+    height: 45vh;
+    margin: 20px 20px;
+    border-radius: 5px;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* FOOTER STYLING */
+
+  #test {
+    margin: 0 auto;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+ 
 }
- */
+
+
+
 
 
 @media screen and (max-width: 375px){
   * {
     font-family: Exo 2, sans-serif;
-    /* border: 1px solid gold; */
+    border: 1px solid gold;
   }
 
   html {
@@ -429,7 +632,7 @@ hr {
     justify-content: center;
     width: 400px;
     height: 100vh;
-    margin: 20px 10px;
+    margin: 20px 18px;
   }
 
   #aboutMeTileContainer {
@@ -479,9 +682,9 @@ hr {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 400px;
+    width: 410px;
     height: 100vh;
-    margin: 20px auto;
+    margin: 100px 18px;
   }
 
   .skill {
@@ -523,28 +726,26 @@ hr {
     background-color: #fb3640;
     height: 2px;
     width: 300px;
-    margin: 0 auto;
+    margin: 25px 25px;
     text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
   }
   #myProjectsContainer{
-    width: 360px;
-    margin: 0 30px;
+    width: 400px;
+    margin: 100px auto;
   }
 
   #projectsContainer {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 0 6px;
 
   }
 
   .projects {
-    width: 350px;
-    height: 45vh;
+    width: 380px;
+    height: 300px;
     margin: 20px;
     border-radius: 5px;
   }
