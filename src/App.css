@@ -1279,28 +1279,17 @@ hr {
 
 
 
+@media screen and (max-width: 411px){
+  #hamburgerMenu{
+    /* border: 1px solid gold; */
+    width: 470px;
+  }
+}
+
+
 
 @media screen and (max-width: 375px){
-  * {
-    font-family: Exo 2, sans-serif;
-    /* border: 1px solid gold; */
-  }
-
-  html {
-    /* border: 1px solid black; */
-    background-color: #e2e2e2;
-    width: 100%;
-  }
-
-  #main{
-    /* width: 100%; */
-    /* border: 1px solid purple; */
-  }
-  .App{
-    width: 425px;
-    margin: 0;
-    /* border: 1px solid black; */
-  }
+ 
 /* ///////////////////////////////////////// */
 /* ///////////////////////////////////////// */
 /* ///////////////////////////////////////// */
@@ -1311,7 +1300,7 @@ hr {
     background-image: url(headerGif.gif);
     background-repeat: no-repeat;
     padding: 10px;
-    width: 113vw;
+    width: 472px;
     height: 30px;
     border-bottom: 4px solid #fb3640;
   }
@@ -1409,7 +1398,7 @@ hr {
     justify-content: center;
     width: 400px;
     height: 100vh;
-    margin: 20px 18px;
+    margin: 20px 45px;
   }
 
   #aboutMeTileContainer {
@@ -1557,13 +1546,13 @@ hr {
 
 
 @media screen and (max-width: 360px){
-  * {
-    font-family: Exo 2, sans-serif;
+   *{ 
+    /* font-family: Exo 2, sans-serif; */
     /* border: 1px solid gold; */
   }
 
   html {
-    background-color: #e2e2e2;
+    /* background-color: #e2e2e2; */
   }
 
   #main{
@@ -1572,7 +1561,7 @@ hr {
   }
   .App{
     width: 425px;
-    margin: 0;
+    /* margin: 0; */
     /* border: 1px solid black; */
   }
 /* ///////////////////////////////////////// */
@@ -1588,7 +1577,6 @@ hr {
     background-image: url(headerGif.gif);
     background-repeat: no-repeat;
     padding: 10px;
-    width: 113vw;
     height: 30px;
     border-bottom: 4px solid #fb3640;
   }
@@ -1757,6 +1745,11 @@ hr {
     width: 80px;
   }
 
+  #mongo{
+    height: 90px;
+    width: 90px;
+  }
+
   .skillPicture {
     width: 70px;
     height: 70px;
@@ -1816,7 +1809,7 @@ hr {
 
   #test{
     margin-top: 160px;
-    width: 100vw;
+    width: 100%;
   }
 
   #contactMeHeader{
@@ -1832,7 +1825,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 427px;
+    width: 100%;
     background-color: #364369;
   }
   #triangles{
@@ -1843,30 +1836,30 @@ hr {
   #leftTriangle{
     outline-style: none;
     height: 80px;
-    width: 205px;
-    border-top: 80px solid transparent;
-    border-left: 50vw solid #546186;
+    /* width: 205px; */
+    /* border-top: 80px solid transparent; */
+    border-left: 60vw solid #546186;
     /* margin-right: 5px; */
   }
   #rightTriangle{
     outline-color: red;
     height: 80px;
-    border-top: 80px solid transparent;
-    border-right: 50vw solid #546186;
+    /* border-top: 80px solid transparent;*/
+    border-right: 60vw solid #546186;
     /* margin-left: 5px; */
-    width: 205px;
+    /* width: 205px; */
   }
 
   #footer li {
     display: inline;
-    margin-right: 20px;
-    font-size: 18px;
+    /* margin-right: 20px; */
+    /* font-size: 18px; */
   }
 
   #footer a {
-    text-decoration: none;
-    color: #e2e2e2;
-    letter-spacing: 4px;
+    /* text-decoration: none; */
+    /* color: #e2e2e2; */
+    /* letter-spacing: 4px; */
   }
 
 
@@ -1877,28 +1870,100 @@ hr {
 
 
 @media screen and (max-width: 320px){
-  #hamburgerMenu{
-    width: 100%;
+  /* #root{
+    width: 100vw;
+    border: 1px solid red;
+  } */
+  /*.App{
+    width: 500px;
+    border: 1px solid black;
   }
+  */
+  #hamburgerMenu{
+    width: 96%;
+  }
+  
   #aboutMeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 420px;
     height: 100%;
-    /* margin: 20px 10px; */
+    margin: 20px auto;
     /* border: 1px solid black; */
-  }
-  #hamburgerMenu li{
-    font-size: 22px;
-  }
-  .stickyFooter{
-    width: 120vw;
-  }
+}
   #aboutMeTileContainer{
     width: 400px;
     margin: 0 auto;
+  } 
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* FOOTER STYLING */
+
+  #test {
+    margin-top: 160px;
+    width: 100%;
   }
+
+  #contactMeHeader {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #252e4b
+  }
+
+  #linkedin {
+    height: 35px;
+    width: 35px;
+  }
+
+  #linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 101%;
+    background-color: #364369;
+  }
+
+  #triangles {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #leftTriangle {
+    outline-style: none;
+    height: 80px;
+    /* width: 205px; */
+    /* border-top: 80px solid transparent; */
+    border-left: 216px solid #546186;
+    /* margin-right: 5px; */
+  }
+
+  #rightTriangle {
+    outline-color: red;
+    height: 80px;
+    /* border-top: 80px solid transparent;*/
+    border-right: 214px solid #546186;
+    /* margin-left: 5px; */
+    /* width: 205px; */
+  }
+
+  #footer li {
+    display: inline;
+    /* margin-right: 20px; */
+    /* font-size: 18px; */
+  }
+
+  #footer a {
+    /* text-decoration: none; */
+    /* color: #e2e2e2; */
+    /* letter-spacing: 4px; */
+  }
+
 }
 
 
