@@ -99,7 +99,7 @@ class Main extends React.Component{
         return(
             <div id="main">
                 <div id="hamburgerMenu">
-                    {this.state.width <= 414 ?
+                    {this.state.width <= 1024 ?
                     <HamburgerMenu 
                     isOpen={this.state.open}
                     menuClicked={this.handleClick}
@@ -115,7 +115,7 @@ class Main extends React.Component{
                   </ul>
                 </div>
 
-                {this.state.width > 414 ?
+                {this.state.width > 1025 ?
                 <Header 
                 handleChange={this.handleChange}
                 handleView={this.handleView}

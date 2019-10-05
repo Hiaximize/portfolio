@@ -37,7 +37,7 @@ class Header extends React.Component{
 
                         <li onClick={()=>{this.props.handleView('projects')}}>Projects</li>
 
-                        <li id="contact"><a href="mailto:dbarkerit@gmail.com">Contact Me</a></li>
+                        {/* <li id="contact"><a href="mailto:dbarkerit@gmail.com">Contact Me</a></li> */}
 
                     </ul>
                 </div>
