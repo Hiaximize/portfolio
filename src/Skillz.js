@@ -33,7 +33,7 @@ class Skillz extends React.Component{
 
                     <div className="skill swirl-in-fwd" id="mongo">
                         {/* <h3>Mongo</h3> */}
-                        <img className="skillPicture" src="mongodb.png" alt="Mongo"></img>
+                        <img className="skillPicture" id="mongo" src="mongodb.png" alt="Mongo"></img>
                     </div>
 
                     <div className="skill swirl-in-fwd" id="python">

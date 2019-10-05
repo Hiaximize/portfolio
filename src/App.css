@@ -1,36 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
+/* /////////////////////////////////////////@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700&display=swap" rel="stylesheet');
 
-*{
-  /* border: 1px solid gold; */
+.preloader{
+  padding: 15px;
+  height: 100vh;
+  width: 100vw;
+  /* height: 650px;
+  width: 400px; */
+  background-color: #252e4b;
+  /* opacity: .4; */
+  color: #e2e2e2;
+  text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 1025px){
+* {
+
   font-family: Exo 2, sans-serif;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: #252e4b;
   border-radius: 10px;
 }
-html{
+
+html {
   background-color: #e2e2e2;
 }
-#aboutMeContent{
+#hamburgerMenu li{
+  display: none;
+}
+#hamburgerMenu{
+  /* display: none; */
+}
+#aboutMeContent {
   align-content: flex-start;
   display: flex;
   justify-content: space-around;
 }
-#welcomeMessage{
+
+#welcomeMessage {
   font-size: 50px;
   color: #256EB5;
   text-shadow: 2px 2px 4px #7f7f7f;
   width: 60%;
 }
-#skillzContainer{
+
+#skillzContainer {
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -40,7 +67,7 @@ html{
   margin: 0 auto;
 }
 
-.skill{
+.skill {
   margin: 50px;
 }
 
@@ -62,72 +89,78 @@ html{
   filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
 }
 
-.skillPicture:hover{
+.skillPicture:hover {
   transform: scale(1.5);
 }
 
-.Header_root{
+.Header_root {
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
   border-bottom: 4px solid #fb3640;
 }
-.headerContainer{
+
+.headerContainer {
   height: 12vh;
   width: 100vw;
   z-index: 3;
 }
-hr{
+
+hr {
   margin-bottom: 60px;
   background-color: #fb3640;
 }
-#headerLinks a{
+
+#headerLinks a {
   text-decoration: none;
   color: white;
 }
-#headerLinks a:hover{
+
+#headerLinks a:hover {
   color: #af252c;
 }
-#headerLinks li{
+
+#headerLinks li {
   display: inline;
   margin: 15px;
   list-style: none;
 }
 
-#headerLinks{
+#headerLinks {
   font-weight: 600;
   color: white;
   cursor: pointer;
   font-size: 18px;
   letter-spacing: 4px;
 }
-#headerLinks li:hover{
-  font-weight:600;
+
+#headerLinks li:hover {
+  font-weight: 600;
   color: #af252c;
 }
 
-#projectsContainer{
+#projectsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 25px auto;
 }
 
-.projects{
+.projects {
   width: 45vw;
   height: 40vh;
   margin: 20px;
   border-radius: 5px;
 }
 
-#footerContainer{
+#footerContainer {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  /* margin-top: 40px; */
+
 }
 
-#footer li{
+#footer li {
   display: inline;
   margin-right: 20px;
   font-size: 18px;
@@ -140,36 +173,38 @@ hr{
   height: 300px;
 }
 
-#footer a{
+#footer a {
   text-decoration: none;
   color: #e2e2e2;
   letter-spacing: 4px;
 }
 
-#aboutMeContainer{
+#aboutMeContainer {
   width: 90vw;
   height: 90vh;
   margin: 30px auto;
 }
 
-#aboutMeTileContainer{
+#aboutMeTileContainer {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin: -370px auto;
   width: 100%;
   height: 85vh;
-  
+
 }
-.aboutMeImg{
+
+.aboutMeImg {
   width: 100%;
   height: 75%;
   padding-bottom: 2px;
   background-color: #e2e2e2;
 }
-.aboutMeTile{
-  /* margin: 10px; */
+
+.aboutMeTile {
+
   font-weight: 600;
   border-radius: 5px;
   background-color: #252e4b;
@@ -182,249 +217,1695 @@ hr{
   padding: 4px;
 }
 
-.aboutMeTile:hover{
-  color:#fb3640;
+.aboutMeTile:hover {
+  color: #fb3640;
 }
 
-/* MEDIA QUERIES */
+  /* FOOTER STYLING */
 
-/* @media(max-width: 360px){
-
-  #welcomeMessage{
-    align-content: flex-start;
+  #test {
+    margin-top: 160px;
   }
 
-  h6{
-    font-size: 12px;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-    height: 60vh;
-
-  }
-
-  #derek{
-    width: 100px;
-    height: 100px;
-  }
-
-   #aboutMeContainer {
-     width: 95vw;
-     height: 85vh;
-     margin: 25px auto;
-   }
- 
-  .aboutMeTile { */
-    /* margin: 10px; */
-    /* border-radius: 5px;
-    background-color: #252e4b;
-    width: 150px;
-    height: 150px;
-    color: #e2e2e2;
+  #contactMeHeader {
     text-align: center;
-    font-size: 10px;
-    letter-spacing: 4px;
-    padding: 4px;
+    letter-spacing: 2px;
+    color: #252e4b
   }
-  .headerContainer {
-    height: 40vh;
-    z-index: 3;
+
+  #linkedin {
+    height: 35px;
+    width: 35px;
   }
-  .Header_root {
+
+  #linksContainer {
     display: flex;
     justify-content: center;
-    padding-right: 20px;
-    border-bottom: 2px solid #e2e2e2;
-  }
-  #headerLinks li{
-    display: block;
-  }
-  
-} */
-
-@media(max-width: 414px){
-
-  #skillzContainer{
-    height: 60vh;
-    width: 90vw;
+    align-items: flex-end;
+    width: 427px;
+    background-color: #364369;
   }
 
-  .skill{
-    margin: 5px;
-  }
-
-  #projectsContainer {
+  #triangles {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin: -60px auto;
+
+  }
+
+  #leftTriangle {
+    outline-style: none;
+    height: 80px;
+    width: 205px;
+    border-top: 80px solid transparent;
+    border-left: 214px solid #546186;
+    /* margin-right: 5px; */
+  }
+
+  #rightTriangle {
+    outline-color: red;
+    height: 80px;
+    border-top: 80px solid transparent;
+    border-right: 214px solid #546186;
+    /* margin-left: 5px; */
+    width: 205px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
+  }
+
+  html {
+    background-color: #e2e2e2;
+    /* border: 1px solid blue; */
+  }
+
+  #main {
+    width: 925px;
+    /* border: 1px solid purple; */
+  }
+
+  .App {
+    width: 925px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+  #hamburgerMenu {
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100vw;
+    padding: 10px;
+    width: 1004px;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .menuItem {
+    display: none;
+    text-align: right;
+  }
+
+  #hamburgerMenu li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 40px;
+    width: 300px;
+    /* border: 1px solid gold; */
+    text-align: right;
+  }
+
+  #projects {
+    width: 150px;
+    color: red;
+  }
+
+  #hamburgerMenuItems {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 25px 12px;
+    width: 95%;
+  }
+
+  #derek {
+    margin-top: 25px auto;
+    width: 350px;
+    height: 350px;
+  }
+
+  #avatar {
+    height: 350px;
+    /* margin-top: 30px; */
   }
 
   #welcomeMessage {
-    font-size: 22px;
+    font-size: 55px;
+    margin-right: 20px;
     color: #256EB5;
-    text-shadow: 2px 2px 4px #b2b2b2;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1024px;
+    height: 70vh;
+    margin: 5px auto;
   }
 
   #aboutMeTileContainer {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 95%;
+    height: 420px;
     margin: 0 auto;
+  }
+
+  .aboutMeImg {
     width: 100%;
-    height: 40vh;
-
+    height: 88%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
   }
 
-  #derek{
-    width: 120px;
-    height: 120px;
+  .aboutMeTile {
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 450px;
+    height: 450px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 4px;
+    padding: 8px;
+    margin: 10px;
   }
 
-  #footerContainer {
+  .aboutMeTile:hover {
+    color: #fb3640;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
     display: flex;
     justify-content: space-around;
-    align-self: center;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+    margin: 100px 48px;
   }
-  #test {
-    height: 100px;
+
+  .skill {
+    margin: 35px;
   }
-  #headerLinks li {
-    display: inline;
-    margin: 5px;
-    list-style: none;
+
+  #mongo{
+    height: 160px;
+    width: 160px;
   }
-  #aboutMeContainer {
-    width: 95vw;
-    height: 90vh;
-    margin: -110px auto;
+
+  #javascript {
+    width: 180px;
+    height: 180px;
+
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
   }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 150px;
+    width: 150px;
+  }
+
+  .skillPicture {
+    width: 180px;
+    height: 180px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr {
+    background-color: #fb3640;
+    height: 2px;
+    width: 700px;
+    text-align: center;
+    margin: 20px auto;
+
+  }
+
+  #myProjectsContainer {
+    width: 950px;
+    margin: 100px 30px;
+  }
+
+  #projectsContainer {
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  #projectsContainer a {
+    height: 100%;
+  }
+
   .projects {
-    width: 90vw;
-    height: 40vh;
-    margin: 10px;
+    width: 850px;
+    height: 45vh;
+    margin: 20px 20px;
     border-radius: 5px;
   }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* FOOTER STYLING */
+
+  #test {
+    margin-top: 800px;
+    width: 100vw;
+  }
+
+  #contactMeHeader {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #252e4b;
+    font-size: 40px;
+  }
+
+  #linkedin {
+    height: 35px;
+    width: 35px;
+  }
+
+  #linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: #364369;
+  }
+
+  #triangles {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #leftTriangle {
+    height: 80px;
+    width: 600px;
+    border-top: 80px solid transparent;
+    border-left: 50vw solid #546186;
+  }
+
+  #rightTriangle {
+    height: 80px;
+    border-top: 80px solid transparent;
+    border-right: 50vw solid #546186;
+    width: 600px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
+  }
+
+  html {
+    background-color: #e2e2e2;
+    /* border: 1px solid blue; */
+    width: 925px;
+  }
+
+  #main {
+    width: 925px;
+    /* border: 1px solid purple; */
+  }
+
+  .App {
+    width: 925px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+  #hamburgerMenu {
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100vw;
+    padding: 10px;
+    width: 925px;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .menuItem {
+    display: none;
+    text-align: right;
+  }
+
+  #hamburgerMenu li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 30px;
+    width: 200px;
+    text-align: right;
+  }
+
+  #projects {
+    width: 150px;
+    color: red;
+  }
+
+  #hamburgerMenuItems {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    width: 95%;
+  }
+
+  #derek {
+    margin-top: 25px auto;
+    width: 250px;
+    height: 250px;
+  }
+
+  #avatar {
+    height: 250px;
+    /* margin-top: 30px; */
+  }
+
+  #welcomeMessage {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    height: 70vh;
+    margin: 5px auto;
+  }
+
+  #aboutMeTileContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 86%;
+    height: 420px;
+    margin: 0 70px;
+  }
+
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+
   .aboutMeTile {
-    margin: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 350px;
+    height: 350px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 4px;
+    padding: 8px;
+    margin: 10px;
+  }
+
+  .aboutMeTile:hover {
+    color: #fb3640;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 875px;
+    height: 100vh;
+    margin: 100px 35px;
+  }
+
+  .skill {
+    margin: 35px;
+  }
+
+  #javascript {
+    width: 140px;
+    height: 140px;
+    
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 100px;
+    width: 100px;
+  }
+
+  .skillPicture {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr {
+    background-color: #fb3640;
+    height: 2px;
+    width: 600px;
+    text-align: center;
+    margin: 20px auto;
+
+  }
+
+  #myProjectsContainer {
+    width: 900px;
+    margin: 100px 30px;
+  }
+
+  #projectsContainer {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  #projectsContainer a {
+    height: 100%;
+  }
+
+  .projects {
+    width: 750px;
+    height: 45vh;
+    margin: 20px 20px;
+    border-radius: 5px;
+  }
+
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+
+/* FOOTER STYLING */
+
+#test {
+  margin-top: 700px;
+  width: 102%;
+  height: 100%;
+}
+
+#contactMeHeader {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #252e4b;
+  font-size: 30px;
+}
+
+#linkedin {
+  height: 35px;
+  width: 35px;
+}
+
+#linksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  background-color: #364369;
+}
+
+#triangles {
+  display: flex;
+  justify-content: space-around;
+}
+
+#leftTriangle {
+  height: 100px;
+  width: 50vw;
+  border-top: 80px solid transparent;
+  border-left: 62vw solid #546186;
+}
+
+#rightTriangle {
+  height: 100px;
+  border-top: 80px solid transparent;
+  border-right: 62vw solid #546186;
+  width: 50vw;
+}
+
+#footer li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #e2e2e2;
+  letter-spacing: 4px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 414px) {
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
+  }
+
+  html {
+    background-color: #e2e2e2;
+    width: 100%;
+  }
+
+  #main {
+    width: 100%;
+    /* border: 1px solid purple; */
+  }
+
+  .App {
+    width: 425px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+  #hamburgerMenu {
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 113vw;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .menuItem {
+    display: none;
+    text-align: right;
+  }
+
+  #hamburgerMenu ul {
+    text-align: right;
+  }
+
+  #hamburgerMenu li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 30px;
+    width: 200px;
+    text-align: right;
+  }
+
+  #projects {
+    width: 150px;
+    color: red;
+  }
+
+  #hamburgerMenuItems {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #derek {
+    margin-top: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  #avatar {
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  #welcomeMessage {
+    font-size: 26px;
+    margin-right: 20px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    height: 100vh;
+    margin: 5px 34px;
+  }
+
+  #aboutMeTileContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 420px;
+    margin: 0 auto;
+  }
+
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+
+  .aboutMeTile {
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 175px;
+    height: 175px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 6px;
+    margin: 10px;
+  }
+
+  .aboutMeTile:hover {
+    color: #fb3640;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 100vh;
+    margin: 100px 35px;
+  }
+
+  .skill {
+    margin: 15px;
+  }
+
+  #javascript {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillPicture {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr {
+    background-color: #fb3640;
+    height: 2px;
+    width: 320px;
+    text-align: center;
+    margin: 20px 25px;
+    
+  } 
+
+  #myProjectsContainer {
+    width: 420px;
+    margin: 100px 30px;
+  }
+
+  #projectsContainer {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  #projectsContainer a{
+    height: 100%;
+  }
+
+  .projects {
+    width: 400px;
+    height: 45vh;
+    margin: 20px 20px;
+    border-radius: 5px;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+  /* FOOTER STYLING */
+
+  #test {
+    margin-top: 300px;
+    width: 490px;
+  }
+
+  #contactMeHeader {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #252e4b;
+    font-size: 30px;
+  }
+
+  #linkedin {
+    height: 35px;
+    width: 35px;
+  }
+
+  #linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: #364369;
+  }
+
+  #triangles {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #leftTriangle {
+    height: 80px;
+    width: 600px;
+    border-top: 80px solid transparent;
+    border-left: 247px solid #546186;
+  }
+
+  #rightTriangle {
+    height: 80px;
+    border-top: 80px solid transparent;
+    border-right: 247px solid #546186;
+    width: 600px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 375px){
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
+  }
+
+  html {
+    /* border: 1px solid black; */
+    background-color: #e2e2e2;
+    width: 100%;
+  }
+
+  #main{
+    /* width: 100%; */
+    /* border: 1px solid purple; */
+  }
+  .App{
+    width: 425px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+    #hamburgerMenu{
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 113vw;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+  .menuItem{
+    display: none;
+    text-align: right;
+  }
+  #hamburgerMenu ul{
+    text-align: right;
+  }
+  #hamburgerMenu li{
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 30px;
+    width: 200px;
+    text-align: right;
+  }
+  #projects{
+    width: 150px;
+    color: red;
+  }
+  #hamburgerMenuItems{
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #derek {
+    margin-top: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  #avatar{
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  #welcomeMessage {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+    #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 100vh;
+    margin: 20px 18px;
+  }
+
+  #aboutMeTileContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+
+  .aboutMeTile {
+    font-weight: 600;
     border-radius: 5px;
     background-color: #252e4b;
     width: 170px;
     height: 170px;
     color: #e2e2e2;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 4px;
     padding: 4px;
+    margin: 10px;
   }
 
-  .headerContainer {
-    height: 35vh;
-    z-index: 3;
+  .aboutMeTile:hover {
+    color: #fb3640;
   }
 
-  .Header_root {
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
     display: flex;
-    justify-content: center;
-    padding-right: 20px;
-    border-bottom: 2px solid #fb3640;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 410px;
+    height: 100vh;
+    margin: 100px 18px;
+  }
+
+  .skill {
+    margin: 15px;
+  }
+
+  #javascript {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillPicture {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr{
+    background-color: #fb3640;
+    height: 2px;
+    width: 300px;
+    margin: 25px 25px;
+    text-align: center;
+  }
+  #myProjectsContainer{
+    width: 400px;
+    margin: 100px auto;
+  }
+
+  #projectsContainer {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 6px;
+
+  }
+
+  .projects {
+    width: 380px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+
+
+  /* FOOTER STYLING */
+
+  #test{
+    margin: 0 auto;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 360px){
+  * {
+    font-family: Exo 2, sans-serif;
+    /* border: 1px solid gold; */
+  }
+
+  html {
+    background-color: #e2e2e2;
+  }
+
+  #main{
+    width: 100%;
+    /* border: 1px solid purple; */
+  }
+  .App{
+    width: 425px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+
+  /* HEADER STYLING */
+
+    *{
+      /* border: 1px solid gold; */
+    }
+    #hamburgerMenu{
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 113vw;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
+  }
+  .menuItem{
+    display: none;
+    text-align: right;
+  }
+  #hamburgerMenu ul{
+    text-align: right;
+  }
+  #hamburgerMenu li{
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+    padding-right: 10px;
+    font-size: 30px;
+    width: 200px;
+    text-align: right;
+  }
+  #projects{
+    width: 150px;
+    color: red;
+  }
+  #hamburgerMenuItems{
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks a:hover {
+    color: #af252c;
   }
 
   #headerLinks li {
     display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
   }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #derek {
+    margin-top: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  #avatar{
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  #welcomeMessage {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #256EB5;
+    text-shadow: 2px 2px 4px #7f7f7f;
+    width: 100%;
+  }
+
+    #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 100vh;
+    margin: 20px 10px;
+  }
+
+  #aboutMeTileContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .aboutMeImg {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 2px;
+    background-color: #e2e2e2;
+  }
+
+  .aboutMeTile {
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 170px;
+    height: 170px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding: 4px;
+    margin: 10px;
+  }
+
+  .aboutMeTile:hover {
+    color: #fb3640;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100vh;
+    margin: 20px auto;
+  }
+
+  .skill {
+    margin: 15px;
+  }
+
+  #javascript {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillPicture {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  }
+
+  .skillPicture:hover {
+    transform: scale(1.5);
+  }
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr{
+    background-color: #fb3640;
+    height: 2px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #myProjectsContainer{
+    width: 360px;
+    margin: 0 30px;
+  }
+
+  #projectsContainer {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+  }
+
+  .projects {
+    width: 350px;
+    height: 45vh;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////// */
+
+
+  /* FOOTER STYLING */
+
+  #test{
+    margin-top: 160px;
+    width: 100vw;
+  }
+
+  #contactMeHeader{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #252e4b
+  }
+  #linkedin{
+    height: 35px;
+    width: 35px;
+  }
+  #linksContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 427px;
+    background-color: #364369;
+  }
+  #triangles{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  #leftTriangle{
+    outline-style: none;
+    height: 80px;
+    width: 205px;
+    border-top: 80px solid transparent;
+    border-left: 50vw solid #546186;
+    /* margin-right: 5px; */
+  }
+  #rightTriangle{
+    outline-color: red;
+    height: 80px;
+    border-top: 80px solid transparent;
+    border-right: 50vw solid #546186;
+    /* margin-left: 5px; */
+    width: 205px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+
 }
 
-/* NEXT MEDIA QUERY */
-/* need to do the about me page still */
-@media(max-width: 875px) and (max-width:818px){
-   #skillzContainer {
-     z-index: 0;
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
-     width: 90vw;
-     height: 85vh;
-     margin: 0 auto;
-   }
-   .skill{
-     margin: 30px;
-   }
-   #aboutMeContainer {
-     width: 95vw;
-     height: 80vh;
-     margin: -60px auto;
-   }
 
-   #aboutMeTileContainer {
-     display: flex;
-     align-items: flex-end;
-     justify-content: space-around;
-     flex-wrap: wrap;
-     margin: -100px auto;
-     width: 80%;
-     height: 40vh;
-   }
 
-   .aboutMeTile {
-     margin: 15px;
-     border-radius: 5px;
-     background-color: #252e4b;
-     width: 170px;
-     height: 170px;
-     color: #e2e2e2;
-     text-align: center;
-     font-size: 15px;
-     letter-spacing: 4px;
-     padding: 4px;
-   }
-}
 
-@media(max-width: 1099px){
-   #aboutMeContainer {
-     width: 95vw;
-     height: 80vh;
-     margin: -60px auto;
-   }
 
-    #aboutMeTileContainer {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: -100px auto;
-      width: 100%;
-      height: 40vh;
-    }
-     .aboutMeTile {
-       margin: 15px;
-       border-radius: 5px;
-       background-color: #252e4b;
-       width: 170px;
-       height: 170px;
-       color: #e2e2e2;
-       text-align: center;
-       font-size: 15px;
-       letter-spacing: 4px;
-       padding: 4px;
-     }
-
-}
-
-@media(max-width: 1146px){
+@media screen and (max-width: 320px){
+  #hamburgerMenu{
+    width: 100%;
+  }
   #aboutMeContainer {
-    width: 95vw;
-    height: 90vh;
-    margin: -50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    height: 100%;
+    /* margin: 20px 10px; */
+    /* border: 1px solid black; */
+  }
+  #hamburgerMenu li{
+    font-size: 22px;
+  }
+  .stickyFooter{
+    width: 120vw;
+  }
+  #aboutMeTileContainer{
+    width: 400px;
+    margin: 0 auto;
   }
 }
+
+
+
+
+  
+
 
 /* ////////////////// */
 
