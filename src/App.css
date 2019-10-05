@@ -1496,16 +1496,16 @@ hr {
     text-align: center;
   }
   #myProjectsContainer{
-    width: 400px;
-    margin: 100px auto;
+    width: 450px;
+    margin: 100px 10px;
   }
 
   #projectsContainer {
-    width: 400px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 6px;
+    margin: 0 10px;
 
   }
 
@@ -1560,7 +1560,7 @@ hr {
     /* border: 1px solid purple; */
   }
   .App{
-    width: 425px;
+    width: 445px;
     /* margin: 0; */
     /* border: 1px solid black; */
   }
@@ -1578,6 +1578,7 @@ hr {
     background-repeat: no-repeat;
     padding: 10px;
     height: 30px;
+    width: 95.5%;
     border-bottom: 4px solid #fb3640;
   }
   .menuItem{
@@ -1683,7 +1684,7 @@ hr {
     flex-wrap: wrap;
     width: 100%;
     height: 400px;
-    margin: 0 auto;
+    margin: 0 13px;
   }
 
   .aboutMeImg {
@@ -1779,12 +1780,12 @@ hr {
     margin-right: 25px;
   }
   #myProjectsContainer{
-    width: 360px;
-    margin: 0 30px;
+    width: 400px;
+    margin: 25px auto;
   }
 
   #projectsContainer {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1838,14 +1839,14 @@ hr {
     height: 80px;
     /* width: 205px; */
     /* border-top: 80px solid transparent; */
-    border-left: 60vw solid #546186;
+    border-left: 64vw solid #546186;
     /* margin-right: 5px; */
   }
   #rightTriangle{
     outline-color: red;
     height: 80px;
     /* border-top: 80px solid transparent;*/
-    border-right: 60vw solid #546186;
+    border-right: 64vw solid #546186;
     /* margin-left: 5px; */
     /* width: 205px; */
   }
@@ -1870,15 +1871,7 @@ hr {
 
 
 @media screen and (max-width: 320px){
-  /* #root{
-    width: 100vw;
-    border: 1px solid red;
-  } */
-  /*.App{
-    width: 500px;
-    border: 1px solid black;
-  }
-  */
+ 
   #hamburgerMenu{
     width: 96%;
   }
@@ -1939,7 +1932,7 @@ hr {
     height: 80px;
     /* width: 205px; */
     /* border-top: 80px solid transparent; */
-    border-left: 216px solid #546186;
+    border-left: 224px solid #546186;
     /* margin-right: 5px; */
   }
 
@@ -1947,7 +1940,7 @@ hr {
     outline-color: red;
     height: 80px;
     /* border-top: 80px solid transparent;*/
-    border-right: 214px solid #546186;
+    border-right: 224px solid #546186;
     /* margin-left: 5px; */
     /* width: 205px; */
   }
