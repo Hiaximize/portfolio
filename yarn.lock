@@ -3381,11 +3381,6 @@ deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
-deepmerge@^3.1.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
-  integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
-
 default-gateway@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/default-gateway/-/default-gateway-4.2.0.tgz#167104c7500c2115f6dd69b0a536bb8ed720552b"
@@ -8391,12 +8386,10 @@ react-gif-player@^0.4.2:
   dependencies:
     prop-types "^15.6.0"
 
-react-hamburger@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/react-hamburger/-/react-hamburger-0.7.2.tgz#671d407477a327ec6d9bd9a00da0aaf9da80ea05"
-  integrity sha512-hULy6sAgM34gBm2Z6k6AX/YrK3D+14uP7l72DrmfY1CXY12Ajh3Yn8EpnmFhWGrgp+zSs36s5CONXZf0qF8t3g==
-  dependencies:
-    deepmerge "^3.1.0"
+react-hamburger-menu@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-hamburger-menu/-/react-hamburger-menu-1.1.1.tgz#36fb5d38b55f3babb472f94f8cc3640345bfa9ae"
+  integrity sha512-uBmRe8UTmmNsuqKx/Z4H9SnWEa7Wok0ZAzvtfrLgTY2NimLI3lvaPUP/i8q2rfIHfP2gH9u8ltP+YunCHciHdQ==
 
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
