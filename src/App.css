@@ -242,7 +242,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 427px;
+    width: 100VW;
     background-color: #364369;
   }
 
@@ -257,7 +257,7 @@ hr {
     height: 80px;
     width: 205px;
     border-top: 80px solid transparent;
-    border-left: 214px solid #546186;
+    border-left: 50vw solid #546186;
     /* margin-right: 5px; */
   }
 
@@ -265,7 +265,7 @@ hr {
     outline-color: red;
     height: 80px;
     border-top: 80px solid transparent;
-    border-right: 214px solid #546186;
+    border-right: 50vw solid #546186;
     /* margin-left: 5px; */
     width: 205px;
   }

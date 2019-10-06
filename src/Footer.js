@@ -1,13 +1,8 @@
 import React from 'react'
-import StickyFooter from 'react-sticky-footer'
 
 class Footer extends React.Component{
     render(){
         return(
-            // <StickyFooter className="stickyFooter"
-            // bottomThreshold={100}
-            // normalStyles={{margin: "0 auto", position: "absolute", backgroundColor: "#546186", padding: "25px", width: "100%", height: "30px", zIndex: "2"}}
-            // stickyStyles={{display: "none"}}>
             
             <div id = "test">
                 <h4 id="contactMeHeader">Contact Me</h4>
@@ -26,7 +21,7 @@ class Footer extends React.Component{
                     </ul>
                 </div>
             </div>
-          //  </StickyFooter>
+         
         )
     }
 }
