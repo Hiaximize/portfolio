@@ -16,7 +16,7 @@ class Main extends React.Component{
         pageTitle: "My Projects",
         page: 'home'
       },
-      width: window.screen.availWidth,
+      // width: window.screen.availWidth,
       //these values are opposite what would be logical right now open menu is = false will have the menu open NOT closed. A value of true the menu IS NOT opened but closed
       open: false,
       menuOpen: false
@@ -90,17 +90,18 @@ class Main extends React.Component{
   
     render(){
       // console.log(this.state.width)
-      // window.addEventListener('resize', ()=>{
-      //   this.setState({
-      //       width: window.screen.availWidth
-      //   })
-      //   console.log(this.state.width)
-      // })
+      window.addEventListener('resize', ()=>{
+        // this.setState({
+        //     width: window.screen.availWidth
+        // })
+        // console.log(this.state.width)
+        let width = window.innerWidth;
+      })
       
         return(
             <div id="main">
                 <div id="hamburgerMenu">
-                    {this.state.width <= 1024 ?
+                    {this.width <= 1024 ?
                     <HamburgerMenu 
                     isOpen={this.state.open}
                     menuClicked={this.handleClick}
@@ -116,7 +117,7 @@ class Main extends React.Component{
                   </ul>
                 </div>
 
-                {this.state.width > 1025 ?
+                {this.width > 1025 ?
                 <Header 
                 handleChange={this.handleChange}
                 handleView={this.handleView}

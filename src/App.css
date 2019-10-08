@@ -620,7 +620,16 @@ hr {
 }
 
 
-
+@media screen and (max-width: 1017px){
+  #aboutMeContent{
+    margin-top: 200px;
+  }
+  #derek{
+    height: 250px;
+    width: 250px;
+    margin-top: 80px;
+  }
+}
 
 
 
@@ -901,12 +910,9 @@ hr {
   color: #252e4b;
   font-size: 30px;
 }
-
-#linkedin {
-  height: 35px;
-  width: 35px;
+.gmail{
+  padding-top: 20px;
 }
-
 #linksContainer {
   display: flex;
   justify-content: center;
