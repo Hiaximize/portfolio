@@ -90,12 +90,13 @@ class Main extends React.Component{
   
     render(){
       // console.log(this.state.width)
-      window.addEventListener('resize', ()=>{
-        this.setState({
-            width: window.screen.availWidth
-        })
-   
-      })
+      // window.addEventListener('resize', ()=>{
+      //   this.setState({
+      //       width: window.screen.availWidth
+      //   })
+      //   console.log(this.state.width)
+      // })
+      
         return(
             <div id="main">
                 <div id="hamburgerMenu">
