@@ -16,8 +16,7 @@ class Main extends React.Component{
         pageTitle: "My Projects",
         page: 'home'
       },
-      width: window.screen.availWidth,
-      //these values are opposite what would be logical right now open menu is = false will have the menu open NOT closed. A value of true the menu IS NOT opened but closed
+      width: window.innerWidth,
       open: false,
       menuOpen: false
     }
@@ -84,23 +83,15 @@ class Main extends React.Component{
         document.getElementById("tech").style.display = "block"
         document.getElementById("projects").style.display = "block"
       }
-      console.log(this.state.menuOpen)
     }
   
   
     render(){
-      // console.log(this.state.width)
-      // window.addEventListener('resize', ()=>{
-      //   this.setState({
-      //       width: window.screen.availWidth
-      //   })
-      //   console.log(this.state.width)
-      // })
       
         return(
             <div id="main">
                 <div id="hamburgerMenu">
-                    {this.state.width <= 1024 ?
+                
                     <HamburgerMenu 
                     isOpen={this.state.open}
                     menuClicked={this.handleClick}
@@ -108,7 +99,7 @@ class Main extends React.Component{
                     height={30}
                     color="white"
                     animationDuration={.5}
-                  />: ''}
+                  />
                   <ul id="hamburgerMenuItems">
                     <li className="menuItem slide-in-left" id="home" onClick={()=>{{this.handleClick()}{this.handleView('home')}}}>Home</li>
                     <li className="menuItem slide-in-left" id="tech" onClick={()=>{{this.handleClick()}{this.handleView('skillz')}}}>What I've used</li>
@@ -116,11 +107,11 @@ class Main extends React.Component{
                   </ul>
                 </div>
 
-                {this.state.width > 1025 ?
+                
                 <Header 
                 handleChange={this.handleChange}
                 handleView={this.handleView}
-                view={this.state.view}/> : ''}
+                view={this.state.view}/>
 
                 {this.state.view.page==='projects'
                 ? <MyProjects 

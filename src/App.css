@@ -2,22 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700&display=swap" rel="stylesheet');
 
 .preloader{
-  padding: 15px;
+  margin: 0;
   height: 100vh;
   width: 100vw;
-  /* height: 650px;
-  width: 400px; */
   background-color: #252e4b;
-  /* opacity: .4; */
   color: #e2e2e2;
   text-align: center;
   z-index: 99;
 }
 
-
-
-
-@media screen and (min-width: 1025px){
 * {
 
   font-family: Exo 2, sans-serif;
@@ -37,15 +30,121 @@
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: #e2e2e2;
 }
+
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* //////////HEADER////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+
+.Header_root {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  border-bottom: 4px solid #fb3640;
+}
+
+.headerContainer {
+  width: 100%;
+  z-index: 3;
+}
+
+#headerLinks a:hover {
+  color: #af252c;
+}
+
+#headerLinks li {
+  display: inline;
+  margin: 15px;
+  list-style: none;
+}
+
+#headerLinks {
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+#headerLinks li:hover {
+  font-weight: 600;
+  color: #af252c;
+}
+#hamburgerMenu{
+  display: none;
+}
+
 #hamburgerMenu li{
   display: none;
 }
-#hamburgerMenu{
-  /* display: none; */
+
+
+
+
+
+
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////ABOUT ME SECTION////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+
+
+#aboutMeContainer {
+  width: 100%;
+  margin: 30px auto;
 }
+
+#aboutMeTileContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 58px auto;
+  width: 95%;
+}
+
+#derek {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+
+.aboutMeImg {
+  width: 100%;
+  height: 75%;
+  padding-bottom: 2px;
+  background-color: #e2e2e2;
+}
+
+.aboutMeTile {
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #252e4b;
+  width: 250px;
+  height: 250px;
+  color: #e2e2e2;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding: 4px;
+  margin-bottom: 58px;
+}
+
+.aboutMeTile:hover {
+  color: #fb3640;
+}
+
+
 #aboutMeContent {
+  margin: 0 32px;
   align-content: flex-start;
   display: flex;
   justify-content: space-around;
@@ -55,16 +154,22 @@ html {
   font-size: 50px;
   color: #256EB5;
   text-shadow: 2px 2px 4px #7f7f7f;
-  width: 60%;
+  width: 100%;
 }
+
+
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* /////SKILL SECTION//////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
 
 #skillzContainer {
   z-index: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 75vw;
-  height: 85vh;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -94,138 +199,70 @@ html {
   transform: scale(1.5);
 }
 
-.Header_root {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-  border-bottom: 4px solid #fb3640;
-}
 
-.headerContainer {
-  height: 12vh;
-  width: 100vw;
-  z-index: 3;
-}
-
-hr {
-  margin-bottom: 60px;
-  background-color: #fb3640;
-}
-
-#headerLinks a {
-  text-decoration: none;
-  color: white;
-}
-
-#headerLinks a:hover {
-  color: #af252c;
-}
-
-#headerLinks li {
-  display: inline;
-  margin: 15px;
-  list-style: none;
-}
-
-#headerLinks {
-  font-weight: 600;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  letter-spacing: 4px;
-}
-
-#headerLinks li:hover {
-  font-weight: 600;
-  color: #af252c;
-}
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* /////PROJECTS SECTION///// */
+/* ////////////////////////// */
+/* ////////////////////////// */
 
 #projectsContainer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   margin: 25px auto;
 }
 
-.projects {
-  width: 45vw;
-  height: 40vh;
-  margin: 20px;
-  border-radius: 5px;
-}
-
-#footerContainer {
+#myProjectsContainer{
+  width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-
 }
 
-#footer li {
-  display: inline;
-  margin-right: 20px;
-  font-size: 18px;
-}
-
-#derek {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  width: 300px;
-  height: 300px;
-}
-
-#footer a {
-  text-decoration: none;
-  color: #e2e2e2;
-  letter-spacing: 4px;
-}
-
-#aboutMeContainer {
-  width: 90vw;
-  height: 90vh;
-  margin: 30px auto;
-}
-
-#aboutMeTileContainer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: -370px auto;
-  width: 100%;
-  height: 85vh;
-
-}
-
-.aboutMeImg {
-  width: 100%;
-  height: 75%;
-  padding-bottom: 2px;
-  background-color: #e2e2e2;
-}
-
-.aboutMeTile {
-
-  font-weight: 600;
+.projects {
+  width: 45%;
+  height: 40%;
   border-radius: 5px;
-  background-color: #252e4b;
-  width: 250px;
-  height: 250px;
-  color: #e2e2e2;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 4px;
-  padding: 4px;
 }
 
-.aboutMeTile:hover {
-  color: #fb3640;
+.projectsImg{
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
 }
 
-  /* FOOTER STYLING */
+  /* ////////////////////////// */
+  /* ////////////////////////// */
+  /* //////FOOTER SECTION////// */
+  /* ////////////////////////// */
+  /* ////////////////////////// */
+
+
+  #gmail{
+    margin-top: 10px;
+    justify-self: baseline;
+  }
+  #footerContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 4px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
 
   #test {
     margin-top: 160px;
+    max-width: 100%;
   }
 
   #contactMeHeader {
@@ -243,14 +280,13 @@ hr {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 100VW;
+    width: 100%;
     background-color: #364369;
   }
 
   #triangles {
     display: flex;
     justify-content: space-around;
-
   }
 
   #leftTriangle {
@@ -259,7 +295,6 @@ hr {
     width: 205px;
     border-top: 80px solid transparent;
     border-left: 50vw solid #546186;
-    /* margin-right: 5px; */
   }
 
   #rightTriangle {
@@ -267,7 +302,6 @@ hr {
     height: 80px;
     border-top: 80px solid transparent;
     border-right: 50vw solid #546186;
-    /* margin-left: 5px; */
     width: 205px;
   }
 
@@ -284,714 +318,294 @@ hr {
   }
 
 
+@media screen and (max-width: 1024px){
+
+    /* ///////////////////////////////// */
+    /* /////////HEADER SECTION///////// */
+    /* ///////////////////////////////// */
+
+      .headerContainer {
+        display: none;
+      }
+
+      #hamburgerMenu {
+        display: block;
+        background-image: url("headerGif.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 10px;
+        height: 30px;
+        border-bottom: 4px solid #fb3640;
+      }
+
+      #hamburgerMenu li {
+        padding: 15px;
+        width: 255px;
+        font-size: 40px;
+        color: #e2e2e2;
+      }
+
+      #hamburgerMenu li:hover {
+        cursor: pointer;
+        color: #fb3640
+      }
+
+       /* ////////////////////////////// */
+    /* ////////ABOUT ME SECTION///////// */
+    /* ///////////////////////////////// */
+
+    #aboutMeTileContainer{
+      width: 100%;
+    }
+    .aboutMeTile{
+      width: 40%;
+      height: 300px;
+      font-size: 30px;
+    }
+
+     /* //////////////////////////////// */
+    /* /////////SKILLZ SECTION///////// */
+    /* ///////////////////////////////// */
+
+    #skillzContainer{
+      margin-top: 100px;
+    }
+    .skill{
+      width: 150px;
+      height: 150px;
+    }
+    .skillPicture{
+      width: 80%;
+      height: 80%;
+    }
+
+     /* //////////////////////////////// */
+     /* //////PROJECTS SECTION///////// */
+     /* ///////////////////////////////// */
+
+    #projectsContainer{
+      margin-top: 50px;
+    }
+    .projects {
+      margin-bottom: 40px;
+      height: 30%;
+    }
+
+
+     /* //////////////////////////////// */
+     /* /////////FOOTER SECTION///////// */
+     /* ///////////////////////////////// */
+
+     #contactMeHeader{
+       font-size: 30px;
+     }
+  }
+
+@media screen and (max-width: 818px){
+    #welcomeMessage{
+      font-size: 42px;
+    }
+    #derek{
+      height: 200px;
+      width: 200px;
+      margin-top: 50px;
+    }
+    #projectsContainer{
+      flex-direction: column;
+    }
+    .projects{ 
+      width: 100%;
+      
+    }
+  }
+
+@media screen and (max-width: 768px){
+  #skillzContainer{
+    margin: 0 15px;
+  }
 }
 
+@media screen and (max-width: 650px){
 
-
-
-
-@media screen and (max-width: 1024px){
-  * {
-    font-family: Exo 2, sans-serif;
-    /* border: 1px solid gold; */
+  .headerContainer{
+    display: none;
   }
-
-  html {
-    background-color: #e2e2e2;
-    /* border: 1px solid blue; */
-  }
-
-  #main {
-    width: 925px;
-    /* border: 1px solid purple; */
-  }
-
-  .App {
-    width: 925px;
-    margin: 0;
-    /* border: 1px solid black; */
-  }
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-  /* HEADER STYLING */
-
-  #hamburgerMenu {
-    background-image: url(headerGif.gif);
-    background-repeat: no-repeat;
-    background-size: 100% 100vw;
+  #hamburgerMenu{
+    display: block;
+    background-image: url("headerGif.gif");
     padding: 10px;
-    width: 1004px;
     height: 30px;
     border-bottom: 4px solid #fb3640;
   }
-
-  .menuItem {
-    display: none;
-    text-align: right;
+  #hamburgerMenu li{
+    padding: 15px;
+    width: 160px;
+    font-size: 20px;
+    color: #e2e2e2;
   }
-
-  #hamburgerMenu li {
-    list-style: none;
-    margin-bottom: 25px;
-    color: white;
-    padding-right: 10px;
-    font-size: 40px;
-    width: 300px;
-    /* border: 1px solid gold; */
-    text-align: right;
-  }
-
-  #projects {
-    width: 150px;
-    color: red;
-  }
-
-  #hamburgerMenuItems {
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  #headerLinks a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #headerLinks a:hover {
-    color: #af252c;
-  }
-
-  #headerLinks li {
-    display: block;
-    margin: 10px;
-    list-style: none;
-    text-align: right;
-  }
-
-  .headerLinks {
-    font-weight: 600;
-    color: white;
+  #hamburgerMenu li:hover{
     cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 4px;
+    color: #fb3640
+  }
+  #welcomeMessage{
+    font-size: 40px;
   }
 
-  #headerLinks li:hover {
-    font-weight: 600;
-    color: #af252c;
+  hr {
+    margin-bottom: 60px;
+    background-color: #fb3640;
   }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* ABOUT ME */
-  #aboutMeContent {
-    display: flex;
-    justify-content: center;
-    margin: 25px 12px;
-    width: 95%;
-  }
-
-  #derek {
-    margin-top: 25px auto;
-    width: 350px;
-    height: 350px;
-  }
-
-  #avatar {
-    height: 350px;
-    /* margin-top: 30px; */
-  }
-
-  #welcomeMessage {
-    font-size: 55px;
-    margin-right: 20px;
-    color: #256EB5;
-    text-shadow: 2px 2px 4px #7f7f7f;
-    width: 100%;
-  }
-
-  #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1024px;
-    height: 70vh;
-    margin: 5px auto;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 95%;
-    height: 420px;
+  #aboutMeContainer{
     margin: 0 auto;
   }
 
-  .aboutMeImg {
-    width: 100%;
-    height: 88%;
-    padding-bottom: 2px;
-    background-color: #e2e2e2;
+  #derek{
+    margin-top: 50px;
   }
 
-  .aboutMeTile {
+}
+
+@media screen and (max-width: 613px){
+  #derek{
+    margin-top: 75px;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  #headerLinks {
     font-weight: 600;
-    border-radius: 5px;
-    background-color: #252e4b;
-    width: 450px;
-    height: 450px;
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 34px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
     letter-spacing: 4px;
-    padding: 8px;
-    margin: 10px;
   }
 
-  .aboutMeTile:hover {
-    color: #fb3640;
+  #headerLinks a:hover {
+    font-weight: 600;
+    color: #af252c;
   }
 
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* SKILL PAGE STYLING */
-
-  #skillzContainer {
-    z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 900px;
-    height: 100vh;
-    margin: 100px 48px;
+  #hamburgerMenu{
+    background-image: url("headerGif.gif");
   }
 
-  .skill {
-    margin: 35px;
+  .aboutMeTile{
+    width: 50%;
+    height: 50%;
+  }
+  #derek {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+  }
+  #welcomeMessage{
+    font-size: 30px;
   }
 
-  #mongo{
-    height: 160px;
-    width: 160px;
+}
+
+@media screen and (max-width: 414px){
+  /* ////////////////////////////////// */
+  /* ///////ABOUT ME SECTION/////////// */
+  /* ////////////////////////////////// */
+
+  #welcomeMessage{
+    font-size: 22px;
+  }
+  #derek{
+    width: 150px;
+    height: 150px;
+  }
+  .aboutMeTile{
+    width: 150px;
+    height: 150px;
+    font-size: 15px;
   }
 
-  #javascript {
-    width: 180px;
-    height: 180px;
-
-    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+  /* ////////////////////////////////// */
+/* ////////////SKILLZ SECTION////////// */
+  /* ////////////////////////////////// */
+  #skillzContainer{
+    margin: 0 auto;
+  }
+  .skill{
+    width: 100px;
+    height: 100px;
   }
 
-  #node {
-    filter: drop-shadow(0 0 4px white);
+  /* ////////////////////////////////// */
+/* //////////PROJECTS SECTIONS////////// */
+  /* ////////////////////////////////// */
+  .projects{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 411px){
+  #aboutMeContent{
+    margin: 0 auto;
+  }
+  #derek{
     height: 150px;
     width: 150px;
   }
-
-  .skillPicture {
-    width: 180px;
-    height: 180px;
-    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
-  }
-
-  .skillPicture:hover {
-    transform: scale(1.5);
-  }
-
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* PROJECT PAGE STYLING */
-
-  .projectsHr {
-    background-color: #fb3640;
-    height: 2px;
-    width: 700px;
-    text-align: center;
-    margin: 20px auto;
-
-  }
-
-  #myProjectsContainer {
-    width: 950px;
-    margin: 100px 30px;
-  }
-
-  #projectsContainer {
-    width: 950px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-
-  }
-
-  #projectsContainer a {
-    height: 100%;
-  }
-
-  .projects {
-    width: 850px;
-    height: 45vh;
-    margin: 20px 20px;
-    border-radius: 5px;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-  /* FOOTER STYLING */
-
-  #test {
-    margin-top: 800px;
-    width: 100vw;
-  }
-
-  #contactMeHeader {
-    text-align: center;
-    letter-spacing: 2px;
-    color: #252e4b;
-    font-size: 40px;
-  }
-
-  #linkedin {
-    height: 35px;
-    width: 35px;
-  }
-
-  #linksContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-    background-color: #364369;
-  }
-
-  #triangles {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #leftTriangle {
-    height: 80px;
-    width: 600px;
-    border-top: 80px solid transparent;
-    border-left: 50vw solid #546186;
-  }
-
-  #rightTriangle {
-    height: 80px;
-    border-top: 80px solid transparent;
-    border-right: 50vw solid #546186;
-    width: 600px;
-  }
-
-  #footer li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
-  }
-
-  #footer a {
-    text-decoration: none;
-    color: #e2e2e2;
-    letter-spacing: 4px;
-  }
-
 }
 
-
-
-
-
-
-@media screen and (max-width: 768px){
-  * {
-    font-family: Exo 2, sans-serif;
-    /* border: 1px solid gold; */
+@media screen and (max-width: 375px){
+  .aboutMeTile{
+    margin-bottom: 30px;
   }
 
-  html {
-    background-color: #e2e2e2;
-    /* border: 1px solid blue; */
-    width: 925px;
+  #aboutMeContent{
+    margin: 0 auto;
   }
-
-  #main {
-    width: 925px;
-    /* border: 1px solid purple; */
+  #derek{
+    width: 120px;
+    height: 120px;
   }
-
-  .App {
-    width: 925px;
-    margin: 0;
-    /* border: 1px solid black; */
-  }
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-  /* HEADER STYLING */
-
-  #hamburgerMenu {
-    background-image: url(headerGif.gif);
-    background-repeat: no-repeat;
-    background-size: 100% 100vw;
-    padding: 10px;
-    width: 925px;
-    height: 30px;
-    border-bottom: 4px solid #fb3640;
-  }
-
-  .menuItem {
-    display: none;
-    text-align: right;
-  }
-
-  #hamburgerMenu li {
-    list-style: none;
-    margin-bottom: 25px;
-    color: white;
-    padding-right: 10px;
-    font-size: 30px;
-    width: 200px;
-    text-align: right;
-  }
-
-  #projects {
-    width: 150px;
-    color: red;
-  }
-
-  #hamburgerMenuItems {
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  #headerLinks a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #headerLinks a:hover {
-    color: #af252c;
-  }
-
-  #headerLinks li {
-    display: block;
-    margin: 10px;
-    list-style: none;
-    text-align: right;
-  }
-
-  .headerLinks {
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 4px;
-  }
-
-  #headerLinks li:hover {
-    font-weight: 600;
-    color: #af252c;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* ABOUT ME */
-  #aboutMeContent {
-    display: flex;
-    justify-content: center;
-    margin: 25px auto;
+  #welcomeMessage{
     width: 95%;
   }
-
-  #derek {
-    margin-top: 25px auto;
-    width: 250px;
-    height: 250px;
-  }
-
-  #avatar {
-    height: 250px;
-    /* margin-top: 30px; */
-  }
-
-  #welcomeMessage {
-    font-size: 40px;
-    margin-right: 20px;
-    color: #256EB5;
-    text-shadow: 2px 2px 4px #7f7f7f;
+  #skillzContainer{
+    margin: 50px 10px;
     width: 100%;
+   
   }
-
-  #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 900px;
-    height: 70vh;
-    margin: 5px auto;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 86%;
-    height: 420px;
-    margin: 0 70px;
-  }
-
-  .aboutMeImg {
-    width: 100%;
-    height: 75%;
-    padding-bottom: 2px;
-    background-color: #e2e2e2;
-  }
-
-  .aboutMeTile {
-    font-weight: 600;
-    border-radius: 5px;
-    background-color: #252e4b;
-    width: 350px;
-    height: 350px;
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 34px;
-    letter-spacing: 4px;
-    padding: 8px;
+  .skill{
     margin: 10px;
+    width: 90px;
+    height: 90px;
   }
-
-  .aboutMeTile:hover {
-    color: #fb3640;
+  #contactMeHeader{
+    font-size: 25px;
   }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* SKILL PAGE STYLING */
-
-  #skillzContainer {
-    z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 875px;
-    height: 100vh;
-    margin: 100px 35px;
-  }
-
-  .skill {
-    margin: 35px;
-  }
-
-  #javascript {
-    width: 140px;
-    height: 140px;
-    
-    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
-  }
-
-  #node {
-    filter: drop-shadow(0 0 4px white);
-    height: 100px;
-    width: 100px;
-  }
-
-  .skillPicture {
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
-  }
-
-  .skillPicture:hover {
-    transform: scale(1.5);
-  }
-
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* PROJECT PAGE STYLING */
-
-  .projectsHr {
-    background-color: #fb3640;
-    height: 2px;
-    width: 600px;
-    text-align: center;
-    margin: 20px auto;
-
-  }
-
-  #myProjectsContainer {
-    width: 900px;
-    margin: 100px 30px;
-  }
-
-  #projectsContainer {
-    width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-
-  }
-
-  #projectsContainer a {
-    height: 100%;
-  }
-
-  .projects {
-    width: 750px;
-    height: 45vh;
-    margin: 20px 20px;
-    border-radius: 5px;
-  }
-
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-
-/* FOOTER STYLING */
-
-#test {
-  margin-top: 700px;
-  width: 102%;
-  height: 100%;
-}
-
-#contactMeHeader {
-  text-align: center;
-  letter-spacing: 2px;
-  color: #252e4b;
-  font-size: 30px;
-}
-
-#linkedin {
-  height: 35px;
-  width: 35px;
-}
-
-#linksContainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  background-color: #364369;
-}
-
-#triangles {
-  display: flex;
-  justify-content: space-around;
-}
-
-#leftTriangle {
-  height: 100px;
-  width: 50vw;
-  border-top: 80px solid transparent;
-  border-left: 62vw solid #546186;
-}
-
-#rightTriangle {
-  height: 100px;
-  border-top: 80px solid transparent;
-  border-right: 62vw solid #546186;
-  width: 50vw;
-}
-
-#footer li {
-  display: inline;
-  margin-right: 20px;
-  font-size: 18px;
-}
-
-#footer a {
-  text-decoration: none;
-  color: #e2e2e2;
-  letter-spacing: 4px;
-}
 
 }
 
-
-
-
-
-@media screen and (max-width: 414px) {
-  * {
-    font-family: Exo 2, sans-serif;
-    /* border: 1px solid gold; */
-  }
-
-  html {
-    background-color: #e2e2e2;
-    width: 100%;
-  }
-
-  #main {
-    width: 100%;
-    /* border: 1px solid purple; */
-  }
-
-  .App {
-    width: 425px;
-    margin: 0;
-    /* border: 1px solid black; */
-  }
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
+@media screen and (max-width: 360px) {
 
   /* HEADER STYLING */
 
+  html{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   #hamburgerMenu {
+    display: block;
     background-image: url(headerGif.gif);
     background-repeat: no-repeat;
     padding: 10px;
-    width: 113vw;
     height: 30px;
+    width: 102.5%;
     border-bottom: 4px solid #fb3640;
   }
 
-  .menuItem {
+  .headerContainer{
     display: none;
-    text-align: right;
   }
 
   #hamburgerMenu ul {
@@ -1000,17 +614,12 @@ hr {
 
   #hamburgerMenu li {
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: white;
     padding-right: 10px;
-    font-size: 30px;
-    width: 200px;
+    font-size: 25px;
     text-align: right;
-  }
-
-  #projects {
-    width: 150px;
-    color: red;
+    width: 160px;
   }
 
   #hamburgerMenuItems {
@@ -1025,7 +634,7 @@ hr {
     color: white;
   }
 
-  #headerLinks a:hover {
+  #headerLinks li:hover {
     color: #af252c;
   }
 
@@ -1057,16 +666,14 @@ hr {
 
   /* ABOUT ME */
   #aboutMeContent {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
+    /* flex-direction: row; */
   }
 
   #derek {
-    margin-top: 10px auto;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
   }
 
   #avatar {
@@ -1075,20 +682,15 @@ hr {
   }
 
   #welcomeMessage {
-    font-size: 26px;
-    margin-right: 20px;
-    color: #256EB5;
-    text-shadow: 2px 2px 4px #7f7f7f;
-    width: 100%;
+    font-size: 24px;
   }
 
   #aboutMeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 420px;
-    height: 100vh;
-    margin: 5px 34px;
+    width: 100%;
+    margin: 20px auto;
   }
 
   #aboutMeTileContainer {
@@ -1096,33 +698,21 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    height: 420px;
-    margin: 0 auto;
-  }
-
-  .aboutMeImg {
-    width: 100%;
-    height: 75%;
-    padding-bottom: 2px;
-    background-color: #e2e2e2;
+    margin: 0 15px;
   }
 
   .aboutMeTile {
     font-weight: 600;
     border-radius: 5px;
     background-color: #252e4b;
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     color: #e2e2e2;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 4px;
-    padding: 6px;
+    padding: 4px;
     margin: 10px;
-  }
-
-  .aboutMeTile:hover {
-    color: #fb3640;
   }
 
 
@@ -1134,23 +724,12 @@ hr {
   /* SKILL PAGE STYLING */
 
   #skillzContainer {
-    z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 420px;
-    height: 100vh;
-    margin: 100px 35px;
+    width: 100%;
+    margin: 20px 12.5px;
   }
 
   .skill {
-    margin: 15px;
-  }
-
-  #javascript {
-    width: 90px;
-    height: 90px;
-    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
+    margin: 12px;
   }
 
   #node {
@@ -1159,15 +738,11 @@ hr {
     width: 80px;
   }
 
-  .skillPicture {
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
+  #mongo {
+    height: 90px;
+    width: 90px;
   }
 
-  .skillPicture:hover {
-    transform: scale(1.5);
-  }
 
 
 
@@ -1181,784 +756,73 @@ hr {
   .projectsHr {
     background-color: #fb3640;
     height: 2px;
-    width: 320px;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
-    margin: 20px 25px;
-    
-  } 
+  }
 
   #myProjectsContainer {
-    width: 420px;
-    margin: 100px 30px;
-  }
-
-  #projectsContainer {
-    width: 420px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-
-  }
-
-  #projectsContainer a{
-    height: 100%;
-  }
-
-  .projects {
-    width: 400px;
-    height: 45vh;
-    margin: 20px 20px;
-    border-radius: 5px;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-  /* FOOTER STYLING */
-
-  #test {
-    margin-top: 300px;
-    width: 490px;
-  }
-
-  #contactMeHeader {
-    text-align: center;
-    letter-spacing: 2px;
-    color: #252e4b;
-    font-size: 30px;
-  }
-
-  #linkedin {
-    height: 35px;
-    width: 35px;
-  }
-
-  #linksContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     width: 100%;
-    background-color: #364369;
-  }
-
-  #triangles {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #leftTriangle {
-    height: 80px;
-    width: 600px;
-    border-top: 80px solid transparent;
-    border-left: 247px solid #546186;
-  }
-
-  #rightTriangle {
-    height: 80px;
-    border-top: 80px solid transparent;
-    border-right: 247px solid #546186;
-    width: 600px;
-  }
-
-  #footer li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
-  }
-
-  #footer a {
-    text-decoration: none;
-    color: #e2e2e2;
-    letter-spacing: 4px;
-  }
- 
-}
-
-
-
-
-@media screen and (max-width: 411px){
-  #hamburgerMenu{
-    /* border: 1px solid gold; */
-    width: 470px;
-  }
-}
-
-
-
-@media screen and (max-width: 375px){
- 
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-
-  /* HEADER STYLING */
-
-    #hamburgerMenu{
-    background-image: url(headerGif.gif);
-    background-repeat: no-repeat;
-    padding: 10px;
-    width: 472px;
-    height: 30px;
-    border-bottom: 4px solid #fb3640;
-  }
-  .menuItem{
-    display: none;
-    text-align: right;
-  }
-  #hamburgerMenu ul{
-    text-align: right;
-  }
-  #hamburgerMenu li{
-    list-style: none;
-    margin-bottom: 25px;
-    color: white;
-    padding-right: 10px;
-    font-size: 30px;
-    width: 200px;
-    text-align: right;
-  }
-  #projects{
-    width: 150px;
-    color: red;
-  }
-  #hamburgerMenuItems{
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  #headerLinks a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #headerLinks a:hover {
-    color: #af252c;
-  }
-
-  #headerLinks li {
-    display: block;
-    margin: 10px;
-    list-style: none;
-    text-align: right;
-  }
-
-  .headerLinks {
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 4px;
-  }
-
-  #headerLinks li:hover {
-    font-weight: 600;
-    color: #af252c;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* ABOUT ME */
-  #aboutMeContent {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  #derek {
-    margin-top: 10px auto;
-    width: 150px;
-    height: 150px;
-  }
-
-  #avatar{
-    height: 150px;
-    margin-top: 30px;
-  }
-
-  #welcomeMessage {
-    font-size: 24px;
-    margin-right: 20px;
-    color: #256EB5;
-    text-shadow: 2px 2px 4px #7f7f7f;
-    width: 100%;
-  }
-
-    #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    height: 100vh;
-    margin: 20px 45px;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-  }
-
-  .aboutMeImg {
-    width: 100%;
-    height: 75%;
-    padding-bottom: 2px;
-    background-color: #e2e2e2;
-  }
-
-  .aboutMeTile {
-    font-weight: 600;
-    border-radius: 5px;
-    background-color: #252e4b;
-    width: 170px;
-    height: 170px;
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 4px;
-    padding: 4px;
-    margin: 10px;
-  }
-
-  .aboutMeTile:hover {
-    color: #fb3640;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* SKILL PAGE STYLING */
-
-  #skillzContainer {
-    z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 410px;
-    height: 100vh;
-    margin: 100px 18px;
-  }
-
-  .skill {
-    margin: 15px;
-  }
-
-  #javascript {
-    width: 90px;
-    height: 90px;
-    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
-  }
-
-  #node {
-    filter: drop-shadow(0 0 4px white);
-    height: 80px;
-    width: 80px;
-  }
-
-  .skillPicture {
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
-  }
-
-  .skillPicture:hover {
-    transform: scale(1.5);
-  }
-
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* PROJECT PAGE STYLING */
-
-  .projectsHr{
-    background-color: #fb3640;
-    height: 2px;
-    width: 300px;
-    margin: 25px 25px;
-    text-align: center;
-  }
-  #myProjectsContainer{
-    width: 450px;
-    margin: 100px 10px;
-  }
-
-  #projectsContainer {
-    width: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 10px;
-
-  }
-
-  .projects {
-    width: 380px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 5px;
-  }
-
-
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-
-
-  /* FOOTER STYLING */
-
-  #test{
-    margin: 0 auto;
-  }
-
-  #footer li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
-  }
-
-  #footer a {
-    text-decoration: none;
-    color: #e2e2e2;
-    letter-spacing: 4px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 360px){
-   *{ 
-    /* font-family: Exo 2, sans-serif; */
-    /* border: 1px solid gold; */
-  }
-
-  html {
-    /* background-color: #e2e2e2; */
-  }
-
-  #main{
-    width: 100%;
-    /* border: 1px solid purple; */
-  }
-  .App{
-    width: 445px;
-    /* margin: 0; */
-    /* border: 1px solid black; */
-  }
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-
-  /* HEADER STYLING */
-
-    *{
-      /* border: 1px solid gold; */
-    }
-    #hamburgerMenu{
-    background-image: url(headerGif.gif);
-    background-repeat: no-repeat;
-    padding: 10px;
-    height: 30px;
-    width: 95.5%;
-    border-bottom: 4px solid #fb3640;
-  }
-  .menuItem{
-    display: none;
-    text-align: right;
-  }
-  #hamburgerMenu ul{
-    text-align: right;
-  }
-  #hamburgerMenu li{
-    list-style: none;
-    margin-bottom: 25px;
-    color: white;
-    padding-right: 10px;
-    font-size: 30px;
-    width: 200px;
-    text-align: right;
-  }
-  #projects{
-    width: 150px;
-    color: red;
-  }
-  #hamburgerMenuItems{
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  #headerLinks a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #headerLinks a:hover {
-    color: #af252c;
-  }
-
-  #headerLinks li {
-    display: block;
-    margin: 10px;
-    list-style: none;
-    text-align: right;
-  }
-
-  .headerLinks {
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 4px;
-  }
-
-  #headerLinks li:hover {
-    font-weight: 600;
-    color: #af252c;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* ABOUT ME */
-  #aboutMeContent {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  #derek {
-    margin-top: 10px auto;
-    width: 150px;
-    height: 150px;
-  }
-
-  #avatar{
-    height: 150px;
-    margin-top: 30px;
-  }
-
-  #welcomeMessage {
-    font-size: 24px;
-    margin-right: 20px;
-    color: #256EB5;
-    text-shadow: 2px 2px 4px #7f7f7f;
-    width: 100%;
-  }
-
-    #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    height: 100vh;
-    margin: 20px 10px;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px;
-    margin: 0 13px;
-  }
-
-  .aboutMeImg {
-    width: 100%;
-    height: 75%;
-    padding-bottom: 2px;
-    background-color: #e2e2e2;
-  }
-
-  .aboutMeTile {
-    font-weight: 600;
-    border-radius: 5px;
-    background-color: #252e4b;
-    width: 170px;
-    height: 170px;
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 4px;
-    padding: 4px;
-    margin: 10px;
-  }
-
-  .aboutMeTile:hover {
-    color: #fb3640;
-  }
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* SKILL PAGE STYLING */
-
-  #skillzContainer {
-    z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 400px;
-    height: 100vh;
-    margin: 20px auto;
-  }
-
-  .skill {
-    margin: 15px;
-  }
-
-  #javascript {
-    width: 90px;
-    height: 90px;
-    filter: drop-shadow(0 0 4px white) drop-shadow(0 0 2px white);
-  }
-
-  #node {
-    filter: drop-shadow(0 0 4px white);
-    height: 80px;
-    width: 80px;
-  }
-
-  #mongo{
-    height: 90px;
-    width: 90px;
-  }
-
-  .skillPicture {
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(0px 0px 5px white) drop-shadow(0 0 2px white);
-  }
-
-  .skillPicture:hover {
-    transform: scale(1.5);
-  }
-
-
-
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-  /* ///////////////////////////////////////// */
-
-
-  /* PROJECT PAGE STYLING */
-
-  .projectsHr{
-    background-color: #fb3640;
-    height: 2px;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  #myProjectsContainer{
-    width: 400px;
-    margin: 25px auto;
-  }
-
-  #projectsContainer {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-
-  }
-
-  .projects {
-    width: 350px;
-    height: 45vh;
-    margin: 20px;
-    border-radius: 5px;
-  }
-
-
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-/* ///////////////////////////////////////// */
-
-
-  /* FOOTER STYLING */
-
-  #test{
-    margin-top: 160px;
-    width: 100%;
-  }
-
-  #contactMeHeader{
-    text-align: center;
-    letter-spacing: 2px;
-    color: #252e4b
-  }
-  #linkedin{
-    height: 35px;
-    width: 35px;
-  }
-  #linksContainer{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-    background-color: #364369;
-  }
-  #triangles{
-    display: flex;
-    justify-content: space-around;
-
-  }
-  #leftTriangle{
-    outline-style: none;
-    height: 80px;
-    /* width: 205px; */
-    /* border-top: 80px solid transparent; */
-    border-left: 64vw solid #546186;
-    /* margin-right: 5px; */
-  }
-  #rightTriangle{
-    outline-color: red;
-    height: 80px;
-    /* border-top: 80px solid transparent;*/
-    border-right: 64vw solid #546186;
-    /* margin-left: 5px; */
-    /* width: 205px; */
-  }
-
-  #footer li {
-    display: inline;
-    /* margin-right: 20px; */
-    /* font-size: 18px; */
-  }
-
-  #footer a {
-    /* text-decoration: none; */
-    /* color: #e2e2e2; */
-    /* letter-spacing: 4px; */
-  }
-
-
-}
-
-
-
-
-
-@media screen and (max-width: 320px){
- 
-  #hamburgerMenu{
-    width: 96%;
-  }
-  
-  #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 420px;
-    height: 100%;
-    margin: 20px auto;
-    /* border: 1px solid black; */
-}
-  #aboutMeTileContainer{
-    width: 400px;
-    margin: 0 auto;
+    margin: 25px 12.5px;
   } 
 
+  .projects{
+    width: 100%;
+  }
+
+  .projects img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
 
 
   /* FOOTER STYLING */
-
-  #test {
-    margin-top: 160px;
-    width: 100%;
-  }
-
-  #contactMeHeader {
-    text-align: center;
-    letter-spacing: 2px;
-    color: #252e4b
-  }
-
-  #linkedin {
-    height: 35px;
-    width: 35px;
-  }
+ 
 
   #linksContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 101%;
-    background-color: #364369;
+    width: 108%;
   }
 
   #triangles {
     display: flex;
     justify-content: space-around;
-
+    width: 106%;
   }
 
   #leftTriangle {
-    outline-style: none;
     height: 80px;
-    /* width: 205px; */
-    /* border-top: 80px solid transparent; */
-    border-left: 224px solid #546186;
-    /* margin-right: 5px; */
+    border-left: 55vw solid #546186;
   }
 
   #rightTriangle {
-    outline-color: red;
     height: 80px;
-    /* border-top: 80px solid transparent;*/
-    border-right: 224px solid #546186;
-    /* margin-left: 5px; */
-    /* width: 205px; */
-  }
-
-  #footer li {
-    display: inline;
-    /* margin-right: 20px; */
-    /* font-size: 18px; */
-  }
-
-  #footer a {
-    /* text-decoration: none; */
-    /* color: #e2e2e2; */
-    /* letter-spacing: 4px; */
+    border-right: 55vw solid #546186;
+    
   }
 
 }
+
+@media screen and (max-width: 320px){
+  #hamburgerMenu li{
+    padding: 5px;
+  }
+  #welcomeMessage{
+    font-size: 22px;
+  }
+  #derek{
+    margin-top: 0px;
+  }
+  .aboutMeTile{
+    width: 40%;
+  }
+}
+
 
 
 
