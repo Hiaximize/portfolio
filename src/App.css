@@ -318,7 +318,7 @@ html {
   }
 
 
-  @media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 
     /* ///////////////////////////////// */
     /* /////////HEADER SECTION///////// */
@@ -401,7 +401,7 @@ html {
      }
   }
 
-  @media screen and (max-width: 818px){
+@media screen and (max-width: 818px){
     #welcomeMessage{
       font-size: 42px;
     }
@@ -419,6 +419,11 @@ html {
     }
   }
 
+@media screen and (max-width: 768px){
+  #skillzContainer{
+    margin: 0 15px;
+  }
+}
 
 @media screen and (max-width: 650px){
 
@@ -468,7 +473,6 @@ html {
   }
 }
 
-
 @media screen and (max-width: 600px){
 
   #headerLinks {
@@ -507,16 +511,78 @@ html {
   /* ////////////////////////////////// */
   /* ///////ABOUT ME SECTION/////////// */
   /* ////////////////////////////////// */
+
+  #welcomeMessage{
+    font-size: 22px;
+  }
+  #derek{
+    width: 150px;
+    height: 150px;
+  }
+  .aboutMeTile{
+    width: 150px;
+    height: 150px;
+    font-size: 15px;
+  }
+
+  /* ////////////////////////////////// */
+/* ////////////SKILLZ SECTION////////// */
+  /* ////////////////////////////////// */
+  #skillzContainer{
+    margin: 0 auto;
+  }
+  .skill{
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ////////////////////////////////// */
+/* //////////PROJECTS SECTIONS////////// */
+  /* ////////////////////////////////// */
+  .projects{
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 411px){
-  /* #aboutMeContent{
-    flex-direction: column;
-  } */
-  #derek{
-    height: 300px;
-    width: 300px;
+  #aboutMeContent{
+    margin: 0 auto;
   }
+  #derek{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .aboutMeTile{
+    margin-bottom: 30px;
+  }
+
+  #aboutMeContent{
+    margin: 0 auto;
+  }
+  #derek{
+    width: 120px;
+    height: 120px;
+  }
+  #welcomeMessage{
+    width: 95%;
+  }
+  #skillzContainer{
+    margin: 50px 10px;
+    width: 100%;
+   
+  }
+  .skill{
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+  }
+  #contactMeHeader{
+    font-size: 25px;
+  }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -742,6 +808,20 @@ html {
 
 }
 
+@media screen and (max-width: 320px){
+  #hamburgerMenu li{
+    padding: 5px;
+  }
+  #welcomeMessage{
+    font-size: 22px;
+  }
+  #derek{
+    margin-top: 0px;
+  }
+  .aboutMeTile{
+    width: 40%;
+  }
+}
 
 
 
