@@ -17,8 +17,6 @@ class Main extends React.Component{
         page: 'home'
       },
       width: window.innerWidth,
-      // width: window.screen.availWidth,
-      //these values are opposite what would be logical right now open menu is = false will have the menu open NOT closed. A value of true the menu IS NOT opened but closed
       open: false,
       menuOpen: false
     }
@@ -85,17 +83,10 @@ class Main extends React.Component{
         document.getElementById("tech").style.display = "block"
         document.getElementById("projects").style.display = "block"
       }
-      // console.log(this.state.menuOpen)
     }
   
   
     render(){
-      // console.log(this.state.width)
-      // window.addEventListener('resize', ()=>{
-        // this.setState({
-        //     width: window.screen.availWidth
-        // })
-      // })
       
         return(
             <div id="main">

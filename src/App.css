@@ -11,8 +11,6 @@
   z-index: 99;
 }
 
-/* changed from min-width */
-/*@media screen and (max-width: 1025px){*/
 * {
 
   font-family: Exo 2, sans-serif;
@@ -77,10 +75,14 @@ html {
   font-weight: 600;
   color: #af252c;
 }
+#hamburgerMenu{
+  display: none;
+}
 
 #hamburgerMenu li{
   display: none;
 }
+
 
 
 
@@ -142,6 +144,7 @@ html {
 
 
 #aboutMeContent {
+  margin: 0 32px;
   align-content: flex-start;
   display: flex;
   justify-content: space-around;
@@ -151,7 +154,7 @@ html {
   font-size: 50px;
   color: #256EB5;
   text-shadow: 2px 2px 4px #7f7f7f;
-  width: 60%;
+  width: 100%;
 }
 
 
@@ -166,8 +169,7 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 75vw;
-  height: 85vh;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -207,17 +209,27 @@ html {
 #projectsContainer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   margin: 25px auto;
 }
 
+#myProjectsContainer{
+  width: 100%;
+  margin: 0 auto;
+}
+
 .projects {
-  width: 45vw;
-  height: 40vh;
-  margin: 20px;
+  width: 45%;
+  height: 40%;
   border-radius: 5px;
 }
 
+.projectsImg{
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+}
 
   /* ////////////////////////// */
   /* ////////////////////////// */
@@ -226,6 +238,10 @@ html {
   /* ////////////////////////// */
 
 
+  #gmail{
+    margin-top: 10px;
+    justify-self: baseline;
+  }
   #footerContainer {
     margin: 0 auto;
     display: flex;
@@ -302,29 +318,134 @@ html {
   }
 
 
-/* } */
+  @media screen and (max-width: 1024px){
+
+    /* ///////////////////////////////// */
+    /* /////////HEADER SECTION///////// */
+    /* ///////////////////////////////// */
+
+      .headerContainer {
+        display: none;
+      }
+
+      #hamburgerMenu {
+        display: block;
+        background-image: url("headerGif.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 10px;
+        height: 30px;
+        border-bottom: 4px solid #fb3640;
+      }
+
+      #hamburgerMenu li {
+        padding: 15px;
+        width: 255px;
+        font-size: 40px;
+        color: #e2e2e2;
+      }
+
+      #hamburgerMenu li:hover {
+        cursor: pointer;
+        color: #fb3640
+      }
+
+       /* ////////////////////////////// */
+    /* ////////ABOUT ME SECTION///////// */
+    /* ///////////////////////////////// */
+
+    #aboutMeTileContainer{
+      width: 100%;
+    }
+    .aboutMeTile{
+      width: 40%;
+      height: 300px;
+      font-size: 30px;
+    }
+
+     /* //////////////////////////////// */
+    /* /////////SKILLZ SECTION///////// */
+    /* ///////////////////////////////// */
+
+    #skillzContainer{
+      margin-top: 100px;
+    }
+    .skill{
+      width: 150px;
+      height: 150px;
+    }
+    .skillPicture{
+      width: 80%;
+      height: 80%;
+    }
+
+     /* //////////////////////////////// */
+     /* //////PROJECTS SECTION///////// */
+     /* ///////////////////////////////// */
+
+    #projectsContainer{
+      margin-top: 50px;
+    }
+    .projects {
+      margin-bottom: 40px;
+      height: 30%;
+    }
 
 
-/* 
-@media screen and (max-width: 600px){
+     /* //////////////////////////////// */
+     /* /////////FOOTER SECTION///////// */
+     /* ///////////////////////////////// */
+
+     #contactMeHeader{
+       font-size: 30px;
+     }
+  }
+
+  @media screen and (max-width: 818px){
+    #welcomeMessage{
+      font-size: 42px;
+    }
+    #derek{
+      height: 200px;
+      width: 200px;
+      margin-top: 50px;
+    }
+    #projectsContainer{
+      flex-direction: column;
+    }
+    .projects{ 
+      width: 100%;
+      
+    }
+  }
+
+
+@media screen and (max-width: 650px){
 
   .headerContainer{
     display: none;
   }
   #hamburgerMenu{
-    background-image: url("/public/headerGif.gif");
-    text-align: right;
-    padding-right: 20px;
+    display: block;
+    background-image: url("headerGif.gif");
+    padding: 10px;
+    height: 30px;
+    border-bottom: 4px solid #fb3640;
   }
   #hamburgerMenu li{
+    padding: 15px;
+    width: 160px;
+    font-size: 20px;
     color: #e2e2e2;
   }
   #hamburgerMenu li:hover{
+    cursor: pointer;
     color: #fb3640
   }
   #welcomeMessage{
     font-size: 40px;
   }
+
   hr {
     margin-bottom: 60px;
     background-color: #fb3640;
@@ -333,7 +454,295 @@ html {
     margin: 0 auto;
   }
 
-} */
+  #derek{
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 613px){
+  #derek{
+    margin-top: 75px;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+
+  #headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks a:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+  #hamburgerMenu{
+    background-image: url("headerGif.gif");
+  }
+
+  .aboutMeTile{
+    width: 50%;
+    height: 50%;
+  }
+  #derek {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+  }
+  #welcomeMessage{
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 414px){
+  /* ////////////////////////////////// */
+  /* ///////ABOUT ME SECTION/////////// */
+  /* ////////////////////////////////// */
+}
+
+@media screen and (max-width: 411px){
+  /* #aboutMeContent{
+    flex-direction: column;
+  } */
+  #derek{
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  /* HEADER STYLING */
+
+  html{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  #hamburgerMenu {
+    display: block;
+    background-image: url(headerGif.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    height: 30px;
+    width: 102.5%;
+    border-bottom: 4px solid #fb3640;
+  }
+
+  .headerContainer{
+    display: none;
+  }
+
+  #hamburgerMenu ul {
+    text-align: right;
+  }
+
+  #hamburgerMenu li {
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+    padding-right: 10px;
+    font-size: 25px;
+    text-align: right;
+    width: 160px;
+  }
+
+  #hamburgerMenuItems {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #headerLinks a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #headerLinks li:hover {
+    color: #af252c;
+  }
+
+  #headerLinks li {
+    display: block;
+    margin: 10px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .headerLinks {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  #headerLinks li:hover {
+    font-weight: 600;
+    color: #af252c;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* ABOUT ME */
+  #aboutMeContent {
+    width: 100%;
+    margin: 0 auto;
+    /* flex-direction: row; */
+  }
+
+  #derek {
+    width: 125px;
+    height: 125px;
+  }
+
+  #avatar {
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  #welcomeMessage {
+    font-size: 24px;
+  }
+
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #aboutMeTileContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 15px;
+  }
+
+  .aboutMeTile {
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #252e4b;
+    width: 150px;
+    height: 150px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding: 4px;
+    margin: 10px;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* SKILL PAGE STYLING */
+
+  #skillzContainer {
+    width: 100%;
+    margin: 20px 12.5px;
+  }
+
+  .skill {
+    margin: 12px;
+  }
+
+  #node {
+    filter: drop-shadow(0 0 4px white);
+    height: 80px;
+    width: 80px;
+  }
+
+  #mongo {
+    height: 90px;
+    width: 90px;
+  }
+
+
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* PROJECT PAGE STYLING */
+
+  .projectsHr {
+    background-color: #fb3640;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #myProjectsContainer {
+    width: 100%;
+    margin: 25px 12.5px;
+  } 
+
+  .projects{
+    width: 100%;
+  }
+
+  .projects img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+
+
+  /* FOOTER STYLING */
+ 
+
+  #linksContainer {
+    width: 108%;
+  }
+
+  #triangles {
+    display: flex;
+    justify-content: space-around;
+    width: 106%;
+  }
+
+  #leftTriangle {
+    height: 80px;
+    border-left: 55vw solid #546186;
+  }
+
+  #rightTriangle {
+    height: 80px;
+    border-right: 55vw solid #546186;
+    
+  }
+
+}
+
+
 
 
 

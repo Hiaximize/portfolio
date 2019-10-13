@@ -19,7 +19,7 @@ class Footer extends React.Component{
 
                         <li><a href="/Derek_Barker_Full_Stack_Developer_Resume.pdf" download><img src="resume.png" /></a></li>
 
-                        <li><a className="gmail" href="mailto:dbarkerit@gmail.com?Subject=Contact%20Me%20Form%20Submission" target="_top"><img className="gmail" src="gmail.png" /></a></li>
+                        <li><a id="gmail" className="gmail" href="mailto:dbarkerit@gmail.com?Subject=Contact%20Me%20Form%20Submission" target="_top"><img className="gmail" src="gmail.png" /></a></li>
 
                     </ul>
                 </div>
