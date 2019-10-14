@@ -12,7 +12,6 @@
 }
 
 * {
-
   font-family: Exo 2, sans-serif;
 }
 
@@ -25,7 +24,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #252e4b;
+  /* background-color: #252e4b; */
+  background-color: #546186;
   border-radius: 10px;
 }
 
@@ -50,7 +50,7 @@ html {
 
 .headerContainer {
   width: 100%;
-  z-index: 3;
+  z-index: 99;
 }
 
 #headerLinks a:hover {
@@ -170,6 +170,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -242,11 +243,6 @@ html {
     margin-top: 10px;
     justify-self: baseline;
   }
-  #footerContainer {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-  }
 
   #footer a {
     text-decoration: none;
@@ -263,12 +259,17 @@ html {
   #test {
     margin-top: 160px;
     max-width: 100%;
+    background-color: red;
   }
 
   #contactMeHeader {
+    margin: 15px -60px;
+    position: absolute;
+    z-index: 3;
     text-align: center;
     letter-spacing: 2px;
-    color: #252e4b
+    color: #e2e2e2;
+    font-size: 20px;
   }
 
   #linkedin {
@@ -282,6 +283,7 @@ html {
     align-items: flex-end;
     width: 100%;
     background-color: #364369;
+    height: 150px;
   }
 
   #triangles {
@@ -291,18 +293,55 @@ html {
 
   #leftTriangle {
     outline-style: none;
-    height: 80px;
-    width: 205px;
+    height: 400px;
     border-top: 80px solid transparent;
-    border-left: 50vw solid #546186;
+    border-left: 50vw solid #303c5e;
   }
 
   #rightTriangle {
-    outline-color: red;
-    height: 80px;
+    height: 400px;
     border-top: 80px solid transparent;
-    border-right: 50vw solid #546186;
-    width: 205px;
+    border-right: 50vw solid #303c5e;
+  }
+
+  form{
+    margin: 80px -95px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  form input{
+    margin: 5px auto;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 4px;
+    width: 190px;
+    background-color: #e2e2e2;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #contactMePhoneNumber{
+    -webkit-appearance: none;
+  }
+
+  #contactMeMessage {
+    resize: none;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #e2e2e2;
+    margin: 5px auto;
+    width: 192px;
+    padding: 4px;
+    height: 100px;
+  }
+  
+  #submit{
+    margin: 0 50px;
+    width: 100px;
   }
 
   #footer li {
@@ -316,7 +355,32 @@ html {
     color: #e2e2e2;
     letter-spacing: 4px;
   }
+ 
+  #top{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: #151a2a;
+    border-radius: 5px;
+  }
 
+  #upLink{
+    /* border: 1px solid black; */
+  }
+  .up{
+    transform: rotate(-137deg);
+    -webkit-transform: rotate(-137deg);
+  }
+  .upArrow{
+    border: solid #fb3640;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+    margin: 12px 8px;
+  }
 
 @media screen and (max-width: 1024px){
 
@@ -355,9 +419,10 @@ html {
     /* ///////////////////////////////// */
 
     #aboutMeTileContainer{
-      width: 100%;
+      width: 75%;
     }
     .aboutMeTile{
+      margin: 30px 25px;
       width: 40%;
       height: 300px;
       font-size: 30px;
@@ -397,7 +462,13 @@ html {
      /* ///////////////////////////////// */
 
      #contactMeHeader{
-       font-size: 30px;
+       font-size: 20px;
+     }
+     #contactMeMessage{
+       margin: 5px auto;
+       width: 196px;
+       padding: 4px;
+       height: 100px;
      }
   }
 
@@ -422,6 +493,9 @@ html {
 @media screen and (max-width: 768px){
   #skillzContainer{
     margin: 0 15px;
+  }
+  #aboutMeTileContainer{
+    width: 100%;
   }
 }
 
@@ -520,9 +594,12 @@ html {
     height: 150px;
   }
   .aboutMeTile{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     font-size: 15px;
+  }
+  .aboutMeImg{
+    height: 70%;
   }
 
   /* ////////////////////////////////// */
@@ -552,11 +629,23 @@ html {
     height: 150px;
     width: 150px;
   }
+  .skill{
+    margin: 25px;
+    width: 60px;
+    height: 60px;
+  }
+  .skillPicture{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 375px){
   .aboutMeTile{
     margin-bottom: 30px;
+    width: 140px;
+    height: 140px;
+    margin: 15px auto;
   }
 
   #aboutMeContent{
@@ -589,75 +678,6 @@ html {
 
   /* HEADER STYLING */
 
-  html{
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  #hamburgerMenu {
-    display: block;
-    background-image: url(headerGif.gif);
-    background-repeat: no-repeat;
-    padding: 10px;
-    height: 30px;
-    width: 102.5%;
-    border-bottom: 4px solid #fb3640;
-  }
-
-  .headerContainer{
-    display: none;
-  }
-
-  #hamburgerMenu ul {
-    text-align: right;
-  }
-
-  #hamburgerMenu li {
-    list-style: none;
-    margin-bottom: 15px;
-    color: white;
-    padding-right: 10px;
-    font-size: 25px;
-    text-align: right;
-    width: 160px;
-  }
-
-  #hamburgerMenuItems {
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  #headerLinks a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #headerLinks li:hover {
-    color: #af252c;
-  }
-
-  #headerLinks li {
-    display: block;
-    margin: 10px;
-    list-style: none;
-    text-align: right;
-  }
-
-  .headerLinks {
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 4px;
-  }
-
-  #headerLinks li:hover {
-    font-weight: 600;
-    color: #af252c;
-  }
-
 
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
@@ -665,11 +685,6 @@ html {
 
 
   /* ABOUT ME */
-  #aboutMeContent {
-    width: 100%;
-    margin: 0 auto;
-    /* flex-direction: row; */
-  }
 
   #derek {
     width: 125px;
@@ -685,33 +700,7 @@ html {
     font-size: 24px;
   }
 
-  #aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 20px auto;
-  }
-
-  #aboutMeTileContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 15px;
-  }
-
   .aboutMeTile {
-    font-weight: 600;
-    border-radius: 5px;
-    background-color: #252e4b;
-    width: 150px;
-    height: 150px;
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 4px;
-    padding: 4px;
     margin: 10px;
   }
 
@@ -724,26 +713,8 @@ html {
   /* SKILL PAGE STYLING */
 
   #skillzContainer {
-    width: 100%;
-    margin: 20px 12.5px;
+    margin: 0 auto;
   }
-
-  .skill {
-    margin: 12px;
-  }
-
-  #node {
-    filter: drop-shadow(0 0 4px white);
-    height: 80px;
-    width: 80px;
-  }
-
-  #mongo {
-    height: 90px;
-    width: 90px;
-  }
-
-
 
 
   /* ///////////////////////////////////////// */
@@ -753,28 +724,10 @@ html {
 
   /* PROJECT PAGE STYLING */
 
-  .projectsHr {
-    background-color: #fb3640;
-    height: 2px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   #myProjectsContainer {
     width: 100%;
-    margin: 25px 12.5px;
+    margin: 25px auto;
   } 
-
-  .projects{
-    width: 100%;
-  }
-
-  .projects img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
 
 
   /* ///////////////////////////////////////// */
@@ -783,28 +736,7 @@ html {
 
 
   /* FOOTER STYLING */
- 
 
-  #linksContainer {
-    width: 108%;
-  }
-
-  #triangles {
-    display: flex;
-    justify-content: space-around;
-    width: 106%;
-  }
-
-  #leftTriangle {
-    height: 80px;
-    border-left: 55vw solid #546186;
-  }
-
-  #rightTriangle {
-    height: 80px;
-    border-right: 55vw solid #546186;
-    
-  }
 
 }
 

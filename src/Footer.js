@@ -3,14 +3,30 @@ import React from 'react'
 class Footer extends React.Component{
     render(){
         return(
-            
-            <div id = "test">
-                <h4 id="contactMeHeader">Contact Info</h4>
+            <div id="footerContainer">
+
+                <a id="upLink" href="#"><div id="top">
+                    <div className="upArrow up"></div>
+                    {/* <div className="upArrow up"></div> */}
+                </div></a>
+
                 <div id="triangles">
-                    <span id="leftTriangle" /><span id="rightTriangle" />
+                    <span id="leftTriangle">
+                          <h4 id="contactMeHeader">Contact Me</h4>
+                        <form method ="POST"
+                action="https://formspree.io/xaraoakm">
+                        
+                        <input placeholder="First Name" type="text" name="firstName" id="contactMeFirstName" required/><br />
+                        <input placeholder="Last Name" name="lastName" id="contactMeLastName" required/><br />
+                        <input type="email" id="contactMeEmail" name="email" placeholder="Email" required /><br />
+                        <textarea name="message" placeholder="message" id="contactMeMessage" /* rows="5" cols="30" */ required/><br />
+                        <input type="submit" id="submit" value="Contact Me"/>
+                        </form>
+                    </span>
+                    <span id="rightTriangle" />
                 </div>
 
-                <div id="linksContainer">
+            <div id="linksContainer">
                     
                     <ul id="footer">
                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dbarkerit"><img id="linkedin" src="linkedin.png" /></a></li>
@@ -18,13 +34,9 @@ class Footer extends React.Component{
                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/hiaximize"><img src="myGithub.png" /></a></li>
 
                         <li><a href="/Derek_Barker_Full_Stack_Developer_Resume.pdf" download><img src="resume.png" /></a></li>
-
-                        <li><a id="gmail" className="gmail" href="mailto:dbarkerit@gmail.com?Subject=Contact%20Me%20Form%20Submission" target="_top"><img className="gmail" src="gmail.png" /></a></li>
-
                     </ul>
                 </div>
-            </div>
-         
+                </div>
         )
     }
 }

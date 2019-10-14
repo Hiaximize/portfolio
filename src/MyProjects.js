@@ -23,7 +23,7 @@ class MyProjects extends React.Component{
 
                     {/* <hr className="projectsHr"/> */}
 
-                    <a className="projects" rel="noopener noreferrer" target="_blank" href="https://rocky-waters-58456.herokuapp.com"><img className="slit-in-vertical projectsImg" id="finalProject" src="#" alt="MembershipTracker"></img></a>
+                    <a className="projects" rel="noopener noreferrer" target="_blank" href="https://rocky-waters-58456.herokuapp.com"><img className="slit-in-vertical projectsImg" id="finalProject" src="#" alt="MembershipTracker Coming Soon"></img></a>
                 </div>
             </div>
         )
